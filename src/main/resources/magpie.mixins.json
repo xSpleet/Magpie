@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "package": "xspleet.magpie.mixin",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [
+    "MixinBeeEntity",
+    "MixinEnchantmentHelper",
+    "MixinItemStack",
+    "MixinLivingEntity",
+    "MixinPlayerEntity"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "MixinDoubleJump",
+    "MixinVillagerEntity"
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "entities": [
+    "player"
+  ],
+  "slots": [
+    "artifacts/artifact",
+    "active_artifacts/active_artifact"
+  ]
+}

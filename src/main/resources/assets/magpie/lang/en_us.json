@@ -1,0 +1,172 @@
+{
+
+  "item.magpie.rarity.common": "COMMON",
+  "item.magpie.rarity.rare": "RARE",
+  "item.magpie.rarity.epic": "EPIC",
+  "item.magpie.rarity.legendary": "LEGENDARY",
+
+  "item.magpie.tooltip.shiftmoreinfo": "Press Shift for details",
+  "item.magpie.tooltip.active": "<AQUA>ACTIVE",
+  "item.magpie.tooltip.recharge": "Recharge time:",
+  "item.magpie.tooltip.seconds": "seconds",
+
+  "item.magpie.aer": "Aer",
+  "item.magpie.description.aer": "<GRAY~ITALIC>You feel the soft breeze beneath your feet",
+  "item.magpie.tooltip.aer": "<DARK_GREEN>No fall damage&nwln;SPD +20%",
+
+  "item.magpie.aether":"Aether",
+  "item.magpie.description.aether": "<GRAY~ITALIC>All the elements imbue you with their strength",
+  "item.magpie.tooltip.aether": "<DARK_GREEN>On activate:&nwln;Gives a random elemental effect",
+
+  "item.magpie.aqua": "Aqua",
+  "item.magpie.description.aqua": "<GRAY~ITALIC>Fluidity of the water shapes you through and through",
+  "item.magpie.tooltip.aqua": "<DARK_GREEN>Underwater breathing&nwln;Faster underwater mining, walking and swimming",
+
+  "item.magpie.dream_catcher":"Dream Catcher",
+  "item.magpie.description.dream_catcher": "<GRAY~ITALIC>May only the good dreams visit you in the night",
+  "item.magpie.tooltip.dream_catcher": "You can sleep even with the monsters nearby",
+
+  "item.magpie.fork": "Fork",
+  "item.magpie.description.fork": "<GRAY~ITALIC>Very good for attracting electricity",
+  "item.magpie.tooltip.fork": "<DARK_GREEN>ATK +2&nwln;ATK +6 during rain&nwln;<RED>0.3% chance to get hit by lightning if under rain",
+
+  "item.magpie.ghost_in_a_jar":"Ghost In A Jar",
+  "item.magpie.description.ghost_in_a_jar": "<GRAY~ITALIC>You feel transparent",
+  "item.magpie.tooltip.ghost_in_a_jar": "<DARK_GREEN>All outgoing damage ignores armor&nwln;<RED>All incoming damage ignores armor",
+
+  "item.magpie.holy_grail":"The Holy Grail",
+  "item.magpie.description.holy_grail": "<GRAY~ITALIC>The blood of the martyr",
+  "item.magpie.tooltip.holy_grail": "<DARK_GREEN>You can walk on water&nwln;<DARK_GREEN>Hold shift to sink",
+
+  "item.magpie.ignis": "Ignis",
+  "item.magpie.description.ignis": "<GRAY~ITALIC>The intensity of the flame fills your body",
+  "item.magpie.tooltip.ignis": "<DARK_GREEN>No fire and lava damage&nwln;Attacked entity is set on fire",
+
+  "item.magpie.jupiters_thunderbolt":"Jupiter's Thunderbolt",
+  "item.magpie.description.jupiters_thunderbolt": "<GRAY~ITALIC>The divine lightning used to punish the guilty",
+  "item.magpie.tooltip.jupiters_thunderbolt": "<DARK_GREEN>No lightning damage&nwln;20% chance to strike attacked entity with lightning",
+
+  "item.magpie.light_bulb": "Light bulb",
+  "item.magpie.description.light_bulb": "<GRAY~ITALIC>How much HP do you need to change a light bulb?",
+  "item.magpie.tooltip.light_bulb": "<DARK_GREEN>If full HP:&nwln;ATK +3&nwln;SPD +20%",
+
+  "item.magpie.lightning_arrester":"Lightning Arrester",
+  "item.magpie.description.lightning_arrester": "<GRAY~ITALIC>Catch the lightning!",
+  "item.magpie.tooltip.lightning_arrester": "<DARK_GREEN>No lightning damage&nwln;Recharges all equipped active artifacts if struck by lightning",
+
+  "item.magpie.lizards_tail":"Lizard's Tail",
+  "item.magpie.description.lizards_tail": "<GRAY~ITALIC>May the dexterity of the lizard be your lifeguard!",
+  "item.magpie.tooltip.lizards_tail": "<DARK_GREEN>On fatal hit:&nwln;Ignore damage for 5 seconds&nwln;<RED>This artifact is dropped",
+
+  "item.magpie.lucky_boulder":"Lucky Boulder",
+  "item.magpie.description.lucky_boulder": "<GRAY~ITALIC>You don't need luck to kill someone with this",
+  "item.magpie.tooltip.lucky_boulder": "<DARK_GREEN>ATK +25%",
+
+  "item.magpie.lucky_pebble":"Lucky Pebble",
+  "item.magpie.description.lucky_pebble": "<GRAY~ITALIC>A funny looking pebble",
+  "item.magpie.tooltip.lucky_pebble": "<DARK_GREEN>ATK +10%",
+
+  "item.magpie.lucky_rock":"Lucky Rock",
+  "item.magpie.description.lucky_rock": "<GRAY~ITALIC>A rock full of luck!",
+  "item.magpie.tooltip.lucky_rock": "<DARK_GREEN>ATK +20%",
+
+  "item.magpie.lucky_stone":"Lucky Stone",
+  "item.magpie.description.lucky_stone": "<GRAY~ITALIC>This stone is extraordinary warm",
+  "item.magpie.tooltip.lucky_stone": "<DARK_GREEN>ATK +15%",
+
+  "item.magpie.mars_spear":"Mars' Spear",
+  "item.magpie.description.mars_spear": "<GRAY~ITALIC>The bloodshed caused by this spear invigorates you",
+  "item.magpie.tooltip.mars_spear": "<DARK_GREEN>All outgoing melee damage doubles&nwln; <RED>All incoming melee damage doubles",
+
+  "item.magpie.nerd_glasses":"Nerd Glasses",
+  "item.magpie.description.nerd_glasses": "<GRAY~ITALIC>Ew, a nerd!",
+  "item.magpie.tooltip.nerd_glasses": "No effects affecting your vision are applied",
+
+  "item.magpie.plastic_spoon": "Plastic Spoon",
+  "item.magpie.description.plastic_spoon": "<GRAY~ITALIC>Not the best thing to eat with",
+  "item.magpie.tooltip.plastic_spoon": "<DARK_GREEN>30% chance to not consume stackable food after eating",
+
+  "item.magpie.pocket":"Pocket",
+  "item.magpie.description.pocket": "<GRAY~ITALIC>Oops, you dropped your pocket...",
+  "item.magpie.tooltip.pocket": "<DARK_GREEN>You can carry one more active artifact",
+
+  "item.magpie.potted_cactus": "Potted Cactus",
+  "item.magpie.description.potted_cactus": "<GRAY~ITALIC>A prickly friend",
+  "item.magpie.tooltip.potted_cactus": "<DARK_GREEN>30% of incoming damage is returned to attacker as prickly damage&nwln;No prickly damage",
+
+  "item.magpie.rain_maracas":"Rain Maracas",
+  "item.magpie.description.rain_maracas": "<GRAY~ITALIC>Become the rain shaman!",
+  "item.magpie.tooltip.rain_maracas": "On activate:&nwln;Toggles rain",
+
+  "item.magpie.ritual_candle": "Ritual Candle",
+  "item.magpie.description.ritual_candle": "<GRAY~ITALIC>Bewitch the enemy!",
+  "item.magpie.tooltip.ritual_candle": "<DARK_GREEN>Gives attacked entity 20 seconds of Glowing",
+
+  "item.magpie.rotten_tooth": "Rotten Tooth",
+  "item.magpie.description.rotten_tooth": "<GRAY~ITALIC>Gross...",
+  "item.magpie.tooltip.rotten_tooth": "<DARK_GREEN>Gives attacked entity 3 seconds of Poison",
+
+  "item.magpie.sale_tag":"Sale Tag",
+  "item.magpie.description.sale_tag": "<GRAY~ITALIC>Shopping season!",
+  "item.magpie.tooltip.sale_tag": "<DARK_GREEN>15% off villager trades",
+
+  "item.magpie.selenes_torch":"Selene's Torch",
+  "item.magpie.description.selenes_torch": "<GRAY~ITALIC>This divine torch will ward away the darkness in your way",
+  "item.magpie.tooltip.selenes_torch": "<DARK_GREEN>Constant night vision",
+
+  "item.magpie.terra": "Terra",
+  "item.magpie.description.terra": "<GRAY~ITALIC>You feel the strength of the earth in your limbs",
+  "item.magpie.tooltip.terra": "<DARK_GREEN>You get no knockback&nwln;Hit enemies are thrown away",
+
+  "item.magpie.tranq_dart": "Tranq Dart",
+  "item.magpie.description.tranq_dart": "<GRAY~ITALIC>I feel... slee... py...",
+  "item.magpie.tooltip.tranq_dart": "<DARK_GREEN>Gives attacked entity 8 seconds of Weakness",
+
+  "item.magpie.bag_of_dust": "Bag Of Dust",
+  "item.magpie.description.bag_of_dust": "<GRAY~ITALIC>You feel the physics changing on command",
+  "item.magpie.tooltip.bag_of_dust": "<DARK_GREEN>Double jump",
+
+  "item.magpie.umbrella":"Umbrella",
+  "item.magpie.description.umbrella": "<GRAY~ITALIC>Carried by the wind!",
+  "item.magpie.tooltip.umbrella": "<DARK_GREEN>On activate:&nwln;Applies 20 seconds of Slow Falling",
+  
+  "item.magpie.uranus_blood":"Uranus' Blood",
+  "item.magpie.description.uranus_blood": "<GRAY~ITALIC>Carried by the wind!",
+  "item.magpie.tooltip.uranus_blood": "<DARK_GREEN>During rain:&nwln;Creative Flight&nwln;No fall damage",
+
+  "item.magpie.vampire_fang":"Vampire Fang",
+  "item.magpie.description.vampire_fang": "<GRAY~ITALIC>Drink the enemy!",
+  "item.magpie.tooltip.vampire_fang": "<DARK_GREEN>Heal by a small portion of a killed entities HP",
+
+  "item.magpie.wasp_nest":"Wasp Nest",
+  "item.magpie.description.wasp_nest": "<GRAY~ITALIC>You've got angry wasps in your stomach!",
+  "item.magpie.tooltip.wasp_nest": "<DARK_GREEN>On incoming damage spawns Wasps targeted at the attacker",
+
+  "item.magpie.wax_wing": "Wax Wings",
+  "item.magpie.description.wax_wing": "<GRAY~ITALIC>Carried by the wind!",
+  "item.magpie.tooltip.wax_wing": "<DARK_GREEN>In darkness:&nwln;Creative Flight&nwln;No fall damage",
+
+  "item.magpie.yang":"Yang",
+  "item.magpie.description.yang" : "<GRAY~ITALIC>The sunlight warmly illuminates your soul",
+  "item.magpie.tooltip.yang": "<DARK_GREEN>During day:&nwln;ATK +3&nwln;SPD +20%&nwln;<RED>During night:&nwln;SPD -20% if Yin not equipped",
+
+  "item.magpie.yin":"Yin",
+  "item.magpie.description.yin" : "<GRAY~ITALIC>The moonlight coldly illuminates your soul",
+  "item.magpie.tooltip.yin": "<DARK_GREEN>During night:&nwln;ATK +3&nwln;SPD +20%&nwln;<RED>During day:&nwln;SPD -20% if Yin not equipped",
+
+  "itemgroup.magpie": "Magpie",
+  
+  "key.category.magpie.magpie":"Magpie",
+  "key.magpie.use_active_artifact":"Use Active Artifact",
+
+  "effect.magpie.charged": "Charged",
+  "effect.magpie.tidal_flow": "Tidal Flow",
+  "effect.magpie.inner_flame": "Inner Flame",
+  "effect.magpie.solid_ground": "Solid Ground",
+  "effect.magpie.soft_breeze": "Soft Breeze",
+  "effect.magpie.autotomy": "Autotomy",
+
+  "trinkets.slot.artifacts.artifact": "Artifact",
+  "trinkets.slot.active_artifacts.active_artifact": "Active Artifact"
+  
+}
