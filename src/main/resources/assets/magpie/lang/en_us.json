@@ -21,9 +21,9 @@
   "item.magpie.description.aqua": "<GRAY~ITALIC>Fluidity of the water shapes you through and through",
   "item.magpie.tooltip.aqua": "<DARK_GREEN>Underwater breathing&nwln;Faster underwater mining, walking and swimming",
 
-  "item.magpie.dream_catcher":"Dream Catcher",
-  "item.magpie.description.dream_catcher": "<GRAY~ITALIC>May only the good dreams visit you in the night",
-  "item.magpie.tooltip.dream_catcher": "You can sleep even with the monsters nearby",
+  "item.magpie.melatonin_pill":"Melatonin Pill",
+  "item.magpie.description.melatonin_pill": "<GRAY~ITALIC>May only the good dreams visit you in the night",
+  "item.magpie.tooltip.melatonin_pill": "You can sleep even with the monsters nearby",
 
   "item.magpie.fork": "Fork",
   "item.magpie.description.fork": "<GRAY~ITALIC>Very good for attracting electricity",
@@ -78,7 +78,7 @@
   "item.magpie.tooltip.mars_spear": "<DARK_GREEN>All outgoing melee damage doubles&nwln; <RED>All incoming melee damage doubles",
 
   "item.magpie.nerd_glasses":"Nerd Glasses",
-  "item.magpie.description.nerd_glasses": "<GRAY~ITALIC>Ew, a nerd!",
+  "item.magpie.description.nerd_glasses": "<GRAY~ITALIC>Umm, actually...",
   "item.magpie.tooltip.nerd_glasses": "No effects affecting your vision are applied",
 
   "item.magpie.plastic_spoon": "Plastic Spoon",

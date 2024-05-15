@@ -2,10 +2,10 @@ package xspleet.magpie.item.custom;
 
 import xspleet.magpie.util.ArtifactItem;
 
-public class DreamCatcherItem extends ArtifactItem
+public class MelatoninPillItem extends ArtifactItem
 {
 
-	public DreamCatcherItem(Settings settings) {
+	public MelatoninPillItem(Settings settings) {
 		super(settings);
 	}
 	

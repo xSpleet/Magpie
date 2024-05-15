@@ -60,8 +60,8 @@ public class ModItems
             new LuckyBoulderItem( new FabricItemSettings().maxCount(1)).rarity(ArtifactRarity.RARE));
     public static final Item LIGHTNING_ARRESTER = registerItem("lightning_arrester",
             new LightningArresterItem( new FabricItemSettings().maxCount(1)).rarity(ArtifactRarity.RARE));
-    public static final Item DREAM_CATCHER = registerItem("dream_catcher",
-            new DreamCatcherItem( new FabricItemSettings().maxCount(1)).rarity(ArtifactRarity.RARE));
+    public static final Item MELATONIN_PILL = registerItem("melatonin_pill",
+            new MelatoninPillItem( new FabricItemSettings().maxCount(1)).rarity(ArtifactRarity.RARE));
     public static final Item NERD_GLASSES = registerItem("nerd_glasses",
             new NerdGlassesItem( new FabricItemSettings().maxCount(1)).rarity(ArtifactRarity.RARE));
     public static final Item RAIN_MARACAS = registerItem("rain_maracas",
@@ -124,7 +124,7 @@ public class ModItems
         addToItemGroup(ModItemGroup.MAGPIE, LUCKY_ROCK);
         addToItemGroup(ModItemGroup.MAGPIE, LUCKY_BOULDER);
         addToItemGroup(ModItemGroup.MAGPIE, LIGHTNING_ARRESTER);
-        addToItemGroup(ModItemGroup.MAGPIE, DREAM_CATCHER);
+        addToItemGroup(ModItemGroup.MAGPIE, MELATONIN_PILL);
         addToItemGroup(ModItemGroup.MAGPIE, NERD_GLASSES);
         addToItemGroup(ModItemGroup.MAGPIE, RAIN_MARACAS);
         addToItemGroup(ModItemGroup.MAGPIE, VAMPIRE_FANG);

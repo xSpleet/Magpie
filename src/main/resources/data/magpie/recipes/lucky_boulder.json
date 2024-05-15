@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "RR ",
+    "RR ",
+    "   "
+  ],
+  "key": {
+    "R": {
+      "item": "magpie:lucky_rock"
+    }
+  },
+  "result": {
+    "item": "magpie:lucky_boulder",
+    "count": 1
+  }
+}

@@ -11,7 +11,7 @@ public class PlayerEntityAllowSleepingHandler implements AllowNearbyMonsters{
 
 	@Override
 	public ActionResult allowNearbyMonsters(PlayerEntity player, BlockPos sleepingPos, boolean vanillaResult) {
-		if(TrinketsUtil.hasArtifact(player, ModItems.DREAM_CATCHER))
+		if(TrinketsUtil.hasArtifact(player, ModItems.MELATONIN_PILL))
 		{
 			return ActionResult.SUCCESS;
 		}

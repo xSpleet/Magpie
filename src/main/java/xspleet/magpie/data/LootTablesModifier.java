@@ -103,7 +103,7 @@ public class LootTablesModifier
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .conditionally(RandomChanceLootCondition.builder(0.08f))
                         .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.DREAM_CATCHER)
+                        .with(ItemEntry.builder(ModItems.MELATONIN_PILL)
                                 .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1))));
                 tableBuilder.pool(poolBuilder.build());
             }
