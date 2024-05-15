@@ -7,6 +7,7 @@ import net.minecraft.entity.effect.StatusEffectCategory;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.util.math.MathHelper;
+import xspleet.magpie.MagpieMod;
 import xspleet.magpie.effect.custom.*;
 
 import java.awt.*;
@@ -26,6 +27,7 @@ public class ModStatusEffects
 
     public static void registerStatusEffects()
     {
+        MagpieMod.LOGGER.info("Registering custom status effects");
         AUTOTOMY = ModStatusEffects.register(
                 31415901,
                 "magpie:autotomy",

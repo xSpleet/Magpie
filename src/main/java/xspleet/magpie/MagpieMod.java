@@ -1,6 +1,5 @@
 package xspleet.magpie;
 
-import net.minecraft.entity.LivingEntity;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -10,8 +9,11 @@ import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents;
 import net.fabricmc.fabric.api.networking.v1.ServerPlayNetworking;
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.util.Identifier;
+import xspleet.magpie.data.LootTablesModifier;
+import xspleet.magpie.data.TradeOfferModifier;
 import xspleet.magpie.effect.ModStatusEffects;
-import xspleet.magpie.event.*;
+import xspleet.magpie.event.ModEvents;
+import xspleet.magpie.event.custom.*;
 import xspleet.magpie.item.ModItemGroup;
 import xspleet.magpie.item.ModItems;
 import xspleet.magpie.util.MagpieNetworkingConstants;
@@ -40,14 +42,8 @@ public class MagpieMod implements ModInitializer {
 		ModItemGroup.registerItemGroups();
 		ModItems.registerModItems();
 		ModStatusEffects.registerStatusEffects();
-		ServerLivingEntityEvents.ALLOW_DEATH.register(new LivingEntityDeathHandler());
-		ServerLivingEntityEvents.ALLOW_DAMAGE.register(new CombatModifiersHandler());
-		ServerLivingEntityEvents.ALLOW_DAMAGE.register(new RottenToothDropEvent());
-		ServerLivingEntityEvents.ALLOW_DAMAGE.register(new LivingEntityStatusEffectDamageHandler());
-		EntitySleepEvents.ALLOW_NEARBY_MONSTERS.register(new PlayerEntityAllowSleepingHandler());
-		ServerPlayNetworking.registerGlobalReceiver(MagpieNetworkingConstants.USE_ACTIVE_ARTIFACT_PACKET_ID, (server, player, handler, buf, responseSender) ->
-		{
-			TrinketsUtil.activateAllActiveArtifacts(player);
-		});
+		ModEvents.registerEvents();
+		TradeOfferModifier.modifyTrades();
+		LootTablesModifier.modifyLootTables();
 	}
 }

@@ -1,4 +1,4 @@
-package xspleet.magpie.event;
+package xspleet.magpie.event.custom;
 
 import net.fabricmc.fabric.api.entity.event.v1.ServerLivingEntityEvents.AllowDamage;
 import net.minecraft.entity.LivingEntity;

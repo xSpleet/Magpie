@@ -103,7 +103,7 @@ public class ArtifactItem extends TrinketItem
         if(Screen.hasShiftDown())
         {
             if(stack.getItem() instanceof ActiveArtifactItem)
-                tooltip.add(Text.translatable("item.magpie.tooltip.recharge").append(" " + stack.getMaxDamage()/20 + " ").append(Text.translatable("item.magpie.tooltip.seconds")));
+                tooltip.add(Text.translatable("item.magpie.tooltip.recharge", stack.getMaxDamage()/20 + " "));
             TextFormatter.addTooltips(Text.translatable("item.magpie.tooltip." + stack.getItem()),tooltip);
         }
         else

@@ -1,4 +1,4 @@
-package xspleet.magpie.event;
+package xspleet.magpie.event.custom;
 
 import org.lwjgl.glfw.GLFW;
 

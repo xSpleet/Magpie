@@ -1,4 +1,4 @@
-package xspleet.magpie.event;
+package xspleet.magpie.event.custom;
 
 import net.fabricmc.fabric.api.entity.event.v1.EntitySleepEvents.AllowNearbyMonsters;
 import net.minecraft.entity.player.PlayerEntity;

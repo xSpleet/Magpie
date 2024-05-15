@@ -7,8 +7,7 @@
 
   "item.magpie.tooltip.shiftmoreinfo": "Press Shift for details",
   "item.magpie.tooltip.active": "<AQUA>ACTIVE",
-  "item.magpie.tooltip.recharge": "Recharge time:",
-  "item.magpie.tooltip.seconds": "seconds",
+  "item.magpie.tooltip.recharge": "Recharge time: %dseconds",
 
   "item.magpie.aer": "Aer",
   "item.magpie.description.aer": "<GRAY~ITALIC>You feel the soft breeze beneath your feet",
