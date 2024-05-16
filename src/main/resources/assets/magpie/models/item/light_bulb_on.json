@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "magpie:item/lightbulb_on"
+    "layer0": "magpie:item/light_bulb_on"
   }
 }
