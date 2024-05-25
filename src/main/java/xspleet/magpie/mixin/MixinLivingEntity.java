@@ -1,9 +1,11 @@
 package xspleet.magpie.mixin;
 
 
+import com.llamalad7.mixinextras.injector.v2.WrapWithCondition;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.passive.BeeEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.fluid.FluidState;
 import net.minecraft.item.ItemStack;
@@ -16,17 +18,27 @@ import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.*;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
+import xspleet.magpie.effect.ModStatusEffects;
 import xspleet.magpie.item.ModItems;
 import xspleet.magpie.util.ArtifactItem;
 import xspleet.magpie.util.CombatModifier;
 import xspleet.magpie.util.TrinketsUtil;
 import java.util.List;
+import java.util.Random;
 
 @Mixin(LivingEntity.class)
 public abstract class MixinLivingEntity
 {
     @Unique
     DamageSource damageSource = new DamageSource("NULL");
+
+    @WrapWithCondition(method = "eatFood",
+            at = @At(value = "INVOKE", target = "Lnet/minecraft/item/ItemStack;decrement(I)V"))
+    private boolean checkDecrease(ItemStack instance, int amount)
+    {
+        return (new Random()).nextInt(2) == 0;
+    }
+
 
     @Inject(method = "damage", at = @At("HEAD"))
     private void inject(DamageSource source, float amount, CallbackInfoReturnable<Boolean> cir)

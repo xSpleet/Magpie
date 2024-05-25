@@ -8,15 +8,23 @@ import net.minecraft.item.ItemStack;
 public class ActiveArtifactItem extends ArtifactItem
 {
 
+	private int cooldown;
 
+	public ActiveArtifactItem rarity(ArtifactRarity artifactRarity)
+	{
+		this.artifactRarity = artifactRarity;
+		return this;
+	}
 
-	@Override
-	public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-		if(!entity.world.isClient() && stack.getDamage()!=0)
-    	{
-        	stack.setDamage(stack.getDamage()-1);
-    	}
-		super.tick(stack, slot, entity);
+	public ActiveArtifactItem cooldown(int cooldown)
+	{
+		this.cooldown = cooldown;
+		return this;
+	}
+
+	public int getCooldown()
+	{
+		return this.cooldown;
 	}
 
 	public void activate(PlayerEntity playerEntity){}

@@ -2,10 +2,12 @@ package xspleet.magpie.mixin;
 
 
 import com.llamalad7.mixinextras.injector.v2.WrapWithCondition;
+import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.passive.BeeEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
+import net.minecraft.text.Text;
 import net.minecraft.world.World;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -27,11 +29,11 @@ public abstract class MixinBeeEntity
         return !instance.hasStatusEffect(ModStatusEffects.ANGY);
     }
 
-    @Inject(method = "hasStung", at = @At("HEAD"), cancellable = true)
-    private void angyNotStung(CallbackInfoReturnable<Boolean> cir)
+    @WrapWithCondition(method = "tryAttack",
+            at = @At(value = "INVOKE", target = "Lnet/minecraft/entity/passive/BeeEntity;setHasStung(Z)V"))
+    private boolean checkAngy(BeeEntity instance, boolean hasStung)
     {
-        if(((BeeEntity)(Object)this).hasStatusEffect(ModStatusEffects.ANGY))
-            cir.setReturnValue(false);
-        cir.setReturnValue(cir.getReturnValue());
+        return !instance.hasStatusEffect(ModStatusEffects.ANGY);
     }
+
 }

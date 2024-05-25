@@ -6,8 +6,7 @@
     "MixinBeeEntity",
     "MixinEnchantmentHelper",
     "MixinItemStack",
-    "MixinLivingEntity",
-    "MixinPlayerEntity"
+    "MixinLivingEntity"
   ],
   "injectors": {
     "defaultRequire": 1

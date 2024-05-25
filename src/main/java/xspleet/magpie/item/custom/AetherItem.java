@@ -23,16 +23,16 @@ public class AetherItem extends ActiveArtifactItem
 		switch(effect)
 		{
 			case 0:
-				user.addStatusEffect(new StatusEffectInstance(ModStatusEffects.TIDAL_FLOW,6000,0,false,false));
+				user.addStatusEffect(new StatusEffectInstance(ModStatusEffects.TIDAL_FLOW,6000,0));
 				break;
 			case 1:
-				user.addStatusEffect(new StatusEffectInstance(ModStatusEffects.INNER_FLAME,6000,0,false,false));
+				user.addStatusEffect(new StatusEffectInstance(ModStatusEffects.INNER_FLAME,6000,0));
 				break;
 			case 2:
-				user.addStatusEffect(new StatusEffectInstance(ModStatusEffects.SOLID_GROUND,6000,0,false,false));
+				user.addStatusEffect(new StatusEffectInstance(ModStatusEffects.SOLID_GROUND,6000,0));
 				break;
 			case 3:
-				user.addStatusEffect(new StatusEffectInstance(ModStatusEffects.SOFT_BREEZE,6000,0,false,false));
+				user.addStatusEffect(new StatusEffectInstance(ModStatusEffects.SOFT_BREEZE,6000,0));
 				break;
 		}
 	}

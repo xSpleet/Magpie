@@ -49,7 +49,7 @@ public class ModItems
     public static final Item LIZARDS_TAIL = registerItem("lizards_tail",
             new LizardsTailItem( new FabricItemSettings().maxCount(1)).rarity(ArtifactRarity.EPIC));
     public static final Item AETHER = registerItem("aether",
-            new AetherItem( new FabricItemSettings().maxCount(1).maxDamage(6000)).rarity(ArtifactRarity.EPIC));
+            new AetherItem( new FabricItemSettings().maxCount(1)).rarity(ArtifactRarity.EPIC).cooldown(6000));
     public static final Item LUCKY_PEBBLE = registerItem("lucky_pebble",
             new LuckyPebbleItem( new FabricItemSettings().maxCount(1)).rarity(ArtifactRarity.COMMON));
     public static final Item LUCKY_STONE = registerItem("lucky_stone",
@@ -65,11 +65,11 @@ public class ModItems
     public static final Item NERD_GLASSES = registerItem("nerd_glasses",
             new NerdGlassesItem( new FabricItemSettings().maxCount(1)).rarity(ArtifactRarity.RARE));
     public static final Item RAIN_MARACAS = registerItem("rain_maracas",
-            new RainMaracasItem( new FabricItemSettings().maxCount(1).maxDamage(6000)).rarity(ArtifactRarity.RARE));
+            new RainMaracasItem( new FabricItemSettings().maxCount(1)).rarity(ArtifactRarity.RARE).cooldown(6000));
     public static final Item VAMPIRE_FANG = registerItem("vampire_fang",
             new VampireFangItem( new FabricItemSettings().maxCount(1)).rarity(ArtifactRarity.RARE));
     public static final Item UMBRELLA = registerItem("umbrella",
-            new UmbrellaItem( new FabricItemSettings().maxCount(1).maxDamage(1200)).rarity(ArtifactRarity.EPIC));
+            new UmbrellaItem( new FabricItemSettings().maxCount(1)).rarity(ArtifactRarity.EPIC).cooldown(1200));
     public static final Item POCKET = registerItem("pocket",
             new PocketItem( new FabricItemSettings().maxCount(1)).rarity(ArtifactRarity.EPIC));
     public static final Item JUPITERS_THUNDERBOLT = registerItem("jupiters_thunderbolt",

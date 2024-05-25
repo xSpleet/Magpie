@@ -27,7 +27,7 @@
 
   "item.magpie.fork": "Fork",
   "item.magpie.description.fork": "<GRAY~ITALIC>Very good for attracting electricity",
-  "item.magpie.tooltip.fork": "<DARK_GREEN>ATK +2&nwln;ATK +6 during rain&nwln;<RED>0.3% chance to get hit by lightning if under rain",
+  "item.magpie.tooltip.fork": "<DARK_GREEN>ATK +2&nwln;ATK +6 during rain&nwln;<RED>0.3% chance per tick to get hit by lightning if under rain",
 
   "item.magpie.ghost_in_a_jar":"Ghost In A Jar",
   "item.magpie.description.ghost_in_a_jar": "<GRAY~ITALIC>You feel transparent",
@@ -55,7 +55,7 @@
 
   "item.magpie.lizards_tail":"Lizard's Tail",
   "item.magpie.description.lizards_tail": "<GRAY~ITALIC>May the dexterity of the lizard be your lifeguard!",
-  "item.magpie.tooltip.lizards_tail": "<DARK_GREEN>On fatal hit:&nwln;Ignore damage for 5 seconds&nwln;<RED>This artifact is dropped",
+  "item.magpie.tooltip.lizards_tail": "<DARK_GREEN>On fatal hit:&nwln;Ignore damage for 15 seconds&nwln;<RED>This artifact is dropped",
 
   "item.magpie.lucky_boulder":"Lucky Boulder",
   "item.magpie.description.lucky_boulder": "<GRAY~ITALIC>You don't need luck to kill someone with this",
@@ -83,7 +83,7 @@
 
   "item.magpie.plastic_spoon": "Plastic Spoon",
   "item.magpie.description.plastic_spoon": "<GRAY~ITALIC>Not the best thing to eat with",
-  "item.magpie.tooltip.plastic_spoon": "<DARK_GREEN>30% chance to not consume stackable food after eating",
+  "item.magpie.tooltip.plastic_spoon": "<DARK_GREEN>50% chance to not consume food after eating",
 
   "item.magpie.pocket":"Pocket",
   "item.magpie.description.pocket": "<GRAY~ITALIC>Oops, you dropped your pocket...",
@@ -130,7 +130,7 @@
   "item.magpie.tooltip.umbrella": "<DARK_GREEN>On activate:&nwln;Applies 20 seconds of Slow Falling",
   
   "item.magpie.uranus_blood":"Uranus' Blood",
-  "item.magpie.description.uranus_blood": "<GRAY~ITALIC>Carried by the wind!",
+  "item.magpie.description.uranus_blood": "<GRAY~ITALIC>May the God of Sky be your guide",
   "item.magpie.tooltip.uranus_blood": "<DARK_GREEN>During rain:&nwln;Creative Flight&nwln;No fall damage",
 
   "item.magpie.vampire_fang":"Vampire Fang",
@@ -142,7 +142,7 @@
   "item.magpie.tooltip.wasp_nest": "<DARK_GREEN>On incoming damage spawns Wasps targeted at the attacker",
 
   "item.magpie.wax_wing": "Wax Wings",
-  "item.magpie.description.wax_wing": "<GRAY~ITALIC>Carried by the wind!",
+  "item.magpie.description.wax_wing": "<GRAY~ITALIC>Not too close to the sun!",
   "item.magpie.tooltip.wax_wing": "<DARK_GREEN>In darkness:&nwln;Creative Flight&nwln;No fall damage",
 
   "item.magpie.yang":"Yang",
@@ -158,7 +158,7 @@
   "key.category.magpie.magpie":"Magpie",
   "key.magpie.use_active_artifact":"Use Active Artifact",
 
-  "effect.magpie.charged": "Charged",
+  "effect.magpie.angy": "Angy",
   "effect.magpie.tidal_flow": "Tidal Flow",
   "effect.magpie.inner_flame": "Inner Flame",
   "effect.magpie.solid_ground": "Solid Ground",

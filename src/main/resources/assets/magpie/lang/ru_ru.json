@@ -1,0 +1,171 @@
+{
+
+  "item.magpie.rarity.common": "ОБЫЧНЫЙ",
+  "item.magpie.rarity.rare": "РЕДКИЙ",
+  "item.magpie.rarity.epic": "ЭПИЧЕСКИЙ",
+  "item.magpie.rarity.legendary": "ЛЕГЕНДАРНЫЙ",
+
+  "item.magpie.tooltip.shiftmoreinfo": "Нажмите Shift для дополнительной информации",
+  "item.magpie.tooltip.active": "<AQUA>АКТИВНЫЙ",
+  "item.magpie.tooltip.recharge": "Время перезарядки: %dсекунд",
+
+  "item.magpie.aer": "Аер",
+  "item.magpie.description.aer": "<GRAY~ITALIC>Ты чувствуешь лёгкий бриз под ногами",
+  "item.magpie.tooltip.aer": "<DARK_GREEN>Нет урона от падения&nwln;Скорость +20%",
+
+  "item.magpie.aether":"Эфир",
+  "item.magpie.description.aether": "<GRAY~ITALIC>Все элементы наполняют тебя своей силой",
+  "item.magpie.tooltip.aether": "<DARK_GREEN>При активации:&nwln;Даёт случайный элементарный эффект",
+
+  "item.magpie.aqua": "Аква",
+  "item.magpie.description.aqua": "<GRAY~ITALIC>Изменчивость воды пронизывает тебя насквозь",
+  "item.magpie.tooltip.aqua": "<DARK_GREEN>Подводное дыхание&nwln;Быстрое подводное капание, хождение и плавание",
+
+  "item.magpie.melatonin_pill":"Мелатониновая таблетка",
+  "item.magpie.description.melatonin_pill": "<GRAY~ITALIC>Пусть только хорошие сны посещают тебя ночью",
+  "item.magpie.tooltip.melatonin_pill": "Ты можешь спать даже когда монстры находятся рядом",
+
+  "item.magpie.fork": "Вилка",
+  "item.magpie.description.fork": "<GRAY~ITALIC>Отойди от розетки!",
+  "item.magpie.tooltip.fork": "<DARK_GREEN>Атака +2&nwln;Атака +6 во время дождя&nwln;<RED>0.3% шанса в тик получить удар молнией",
+
+  "item.magpie.ghost_in_a_jar":"Дух в банке",
+  "item.magpie.description.ghost_in_a_jar": "<GRAY~ITALIC>Ты чувствуешь себя прозрачным",
+  "item.magpie.tooltip.ghost_in_a_jar": "<DARK_GREEN>Весь исходящий урон игнорирует броню&nwln;<RED>Весь входящий урон игнорирует броню",
+
+  "item.magpie.holy_grail":"Святой Грааль",
+  "item.magpie.description.holy_grail": "<GRAY~ITALIC>Кровь мученика",
+  "item.magpie.tooltip.holy_grail": "<DARK_GREEN>Ты можешь ходить по воде&nwln;<DARK_GREEN>Держи Shift чтобы тонуть",
+
+  "item.magpie.ignis": "Игнис",
+  "item.magpie.description.ignis": "<GRAY~ITALIC>Интенсивность пламени наполняет твоё тело",
+  "item.magpie.tooltip.ignis": "<DARK_GREEN>Нет урона от огня и лавы&nwln;Атакованное существо поджигается",
+
+  "item.magpie.jupiters_thunderbolt":"Молния Юпитера",
+  "item.magpie.description.jupiters_thunderbolt": "<GRAY~ITALIC>Священная молния, используемая для наказания виновных",
+  "item.magpie.tooltip.jupiters_thunderbolt": "<DARK_GREEN>Нет урона от молний&nwln;20% шанса ударить атакованное существо молнией",
+
+  "item.magpie.light_bulb": "Лампочка",
+  "item.magpie.description.light_bulb": "<GRAY~ITALIC>Гори, гори ясно, чтобы не погасло!",
+  "item.magpie.tooltip.light_bulb": "<DARK_GREEN>Если полное ХП:&nwln;Атака +3&nwln;Скорость +20%",
+
+  "item.magpie.lightning_arrester":"Молниеотвод",
+  "item.magpie.description.lightning_arrester": "<GRAY~ITALIC>Лови молнию!",
+  "item.magpie.tooltip.lightning_arrester": "<DARK_GREEN>Нет урона от молнии&nwln;Заряжает все надетые активные артефакты, если ударен молнией",
+
+  "item.magpie.lizards_tail":"Хвост ящерицы",
+  "item.magpie.description.lizards_tail": "<GRAY~ITALIC>Пусть ловкость язерицы спасёт тебя от смерти!",
+  "item.magpie.tooltip.lizards_tail": "<DARK_GREEN>С шансом 20% при смертельном ударе:&nwln;Игнорирование урона 15 секунд&nwln;<RED>Этот артефакт падает",
+
+  "item.magpie.lucky_boulder":"Счастливый валун",
+  "item.magpie.description.lucky_boulder": "<GRAY~ITALIC>Удача с таким валуном не нужна",
+  "item.magpie.tooltip.lucky_boulder": "<DARK_GREEN>Атака +25%",
+
+  "item.magpie.lucky_pebble":"Счастливый щебень",
+  "item.magpie.description.lucky_pebble": "<GRAY~ITALIC>Смешной щебень",
+  "item.magpie.tooltip.lucky_pebble": "<DARK_GREEN>Атака +10%",
+
+  "item.magpie.lucky_rock":"Счастливый булыжник",
+  "item.magpie.description.lucky_rock": "<GRAY~ITALIC>Булыжник полный удачи",
+  "item.magpie.tooltip.lucky_rock": "<DARK_GREEN>Атака +20%",
+
+  "item.magpie.lucky_stone":"Счастливый камень",
+  "item.magpie.description.lucky_stone": "<GRAY~ITALIC>Этот камушек необычно тёплый",
+  "item.magpie.tooltip.lucky_stone": "<DARK_GREEN>ATK +15%",
+
+  "item.magpie.mars_spear":"Копьё Марса",
+  "item.magpie.description.mars_spear": "<GRAY~ITALIC>Кровопролитие, совершённое этим копьём, разъяривает тебя",
+  "item.magpie.tooltip.mars_spear": "<DARK_GREEN>Весь исходящий урон удваивается&nwln; <RED>Весь входящий урон удваивается",
+
+  "item.magpie.nerd_glasses":"Очки ботана",
+  "item.magpie.description.nerd_glasses": "<GRAY~ITALIC>Эмм, вообще-то...",
+  "item.magpie.tooltip.nerd_glasses": "Эффекты, влияющие на зрение, не срабатывают",
+
+  "item.magpie.plastic_spoon": "Пластиковая ложка",
+  "item.magpie.description.plastic_spoon": "<GRAY~ITALIC>И как ей вообще едят?",
+  "item.magpie.tooltip.plastic_spoon": "<DARK_GREEN>50% шанса не потратить еду",
+
+  "item.magpie.pocket":"Pocket",
+  "item.magpie.description.pocket": "<GRAY~ITALIC>У тебя корман упал!",
+  "item.magpie.tooltip.pocket": "<DARK_GREEN>Ты можешь надевать на один активный артефакт больше",
+
+  "item.magpie.potted_cactus": "Кактус в горшке",
+  "item.magpie.description.potted_cactus": "<GRAY~ITALIC>Колючий друг",
+  "item.magpie.tooltip.potted_cactus": "<DARK_GREEN>30% входящего урона возвращаются атакуемому колючим уроном&nwln;Нет колючего урона",
+
+  "item.magpie.rain_maracas":"Дождевые маракасы",
+  "item.magpie.description.rain_maracas": "<GRAY~ITALIC>Стань дождевым шаманом!",
+  "item.magpie.tooltip.rain_maracas": "При активации:&nwln;Включает/выкключает дождь",
+
+  "item.magpie.ritual_candle": "Ритуальная свечка",
+  "item.magpie.description.ritual_candle": "<GRAY~ITALIC>Хаколдуй противника!",
+  "item.magpie.tooltip.ritual_candle": "<DARK_GREEN>Атакованное существо получает свечение на 20 секунд",
+
+  "item.magpie.rotten_tooth": "Гнилой зуб",
+  "item.magpie.description.rotten_tooth": "<GRAY~ITALIC>Мерзко...",
+  "item.magpie.tooltip.rotten_tooth": "<DARK_GREEN>Атакованное существо получает отравление на 3 секунд",
+
+  "item.magpie.sale_tag":"Бирка со скидкой",
+  "item.magpie.description.sale_tag": "<GRAY~ITALIC>Сезон шоппинга!",
+  "item.magpie.tooltip.sale_tag": "<DARK_GREEN>15% скидки при сделках с жителями",
+
+  "item.magpie.selenes_torch":"Факел Селены",
+  "item.magpie.description.selenes_torch": "<GRAY~ITALIC>Этот священный факел осветит твой путь в темноте",
+  "item.magpie.tooltip.selenes_torch": "<DARK_GREEN>Постоянное ночное зрение",
+
+  "item.magpie.terra": "Терра",
+  "item.magpie.description.terra": "<GRAY~ITALIC>Вы чувствуете силу земли в своих конечностях",
+  "item.magpie.tooltip.terra": "<DARK_GREEN>Нет отбрасывания&nwln;Атакованные существа отбрасываются далеко",
+
+  "item.magpie.tranq_dart": "Дротик-транквилизатор",
+  "item.magpie.description.tranq_dart": "<GRAY~ITALIC>Я сон... ны... й...",
+  "item.magpie.tooltip.tranq_dart": "<DARK_GREEN>Атакованное существо получает слабость на 8 секунд",
+
+  "item.magpie.bag_of_dust": "Мешочек пыли",
+  "item.magpie.description.bag_of_dust": "<GRAY~ITALIC>Ты меняешь физику по желанию!",
+  "item.magpie.tooltip.bag_of_dust": "<DARK_GREEN>Двойной прыжок",
+
+  "item.magpie.umbrella":"Зонт",
+  "item.magpie.description.umbrella": "<GRAY~ITALIC>Унесённые ветром!",
+  "item.magpie.tooltip.umbrella": "<DARK_GREEN>При активации:&nwln;Накладывает 20 секунд медленного падения",
+  
+  "item.magpie.uranus_blood":"Кровь Урана",
+  "item.magpie.description.uranus_blood": "<GRAY~ITALIC>Пусть бог неба будет твоим путеводителем!",
+  "item.magpie.tooltip.uranus_blood": "<DARK_GREEN>Во время дождя:&nwln;Креативный полёт&nwln;Нет урона от падения",
+
+  "item.magpie.vampire_fang":"Вампирский клык",
+  "item.magpie.description.vampire_fang": "<GRAY~ITALIC>Выпей врага!",
+  "item.magpie.tooltip.vampire_fang": "<DARK_GREEN>Ты излечиваешься на мальнькую дозу убитого существа",
+
+  "item.magpie.wasp_nest":"Осиное гнездо",
+  "item.magpie.description.wasp_nest": "<GRAY~ITALIC>У тебя злые осы в животе!",
+  "item.magpie.tooltip.wasp_nest": "<DARK_GREEN>При входящем уроне спавнит ос, разозлённых на атакующего",
+
+  "item.magpie.wax_wing": "Восковые крылья",
+  "item.magpie.description.wax_wing": "<GRAY~ITALIC>Не так близко к солнцу!",
+  "item.magpie.tooltip.wax_wing": "<DARK_GREEN>В темноте:&nwln;Креативный полёт&nwln;Нет урона от падения",
+
+  "item.magpie.yang":"Ян",
+  "item.magpie.description.yang" : "<GRAY~ITALIC>Солнечный свет тепло освещает твою душу",
+  "item.magpie.tooltip.yang": "<DARK_GREEN>Днём:&nwln;Атака +3&nwln;Скорость +20%&nwln;<RED>Ночью:&nwln;Скорость -20% если Инь не надет",
+
+  "item.magpie.yin":"Инь",
+  "item.magpie.description.yin" : "<GRAY~ITALIC>Лунный свет холодно освещает твою душу",
+  "item.magpie.tooltip.yin": "<DARK_GREEN>Ночью:&nwln;Атака +3&nwln;Скорость +20%&nwln;<RED>Днём:&nwln;Скорость -20% если Ян не надет",
+
+  "itemgroup.magpie": "Magpie",
+  
+  "key.category.magpie.magpie":"Magpie",
+  "key.magpie.use_active_artifact":"Использовать активный артефакт",
+
+  "effect.magpie.angy": "Злёй",
+  "effect.magpie.tidal_flow": "Прибрежное течение",
+  "effect.magpie.inner_flame": "Внутреннее пламя",
+  "effect.magpie.solid_ground": "Твёрдая опора",
+  "effect.magpie.soft_breeze": "Лёгкий бриз",
+  "effect.magpie.autotomy": "Самоампутация",
+
+  "trinkets.slot.artifacts.artifact": "Артефакт",
+  "trinkets.slot.active_artifacts.active_artifact": "Активный артефакт"
+  
+}

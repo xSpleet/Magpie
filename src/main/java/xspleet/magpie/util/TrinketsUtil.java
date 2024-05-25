@@ -10,6 +10,7 @@ import dev.emi.trinkets.api.SlotReference;
 import dev.emi.trinkets.api.TrinketsApi;
 import net.minecraft.entity.ItemEntity;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.ItemCooldownManager;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
@@ -67,17 +68,17 @@ public class TrinketsUtil
 	
 	static public boolean activateAllActiveArtifacts(PlayerEntity playerEntity)
 	{
+		ItemCooldownManager cooldownManager = playerEntity.getItemCooldownManager();
 		boolean playSound = false;
 		if(TrinketsApi.getTrinketComponent(playerEntity).isPresent())
 		{
-			
 			for(Pair<SlotReference, ItemStack> pair:TrinketsApi.getTrinketComponent(playerEntity).get().getEquipped(stack -> stack.getItem() instanceof ActiveArtifactItem))
 			{
-				ItemStack itemStack = pair.getRight();
-				if(itemStack.getDamage()==0)
+				Item item = pair.getRight().getItem();
+				if(!cooldownManager.isCoolingDown(item))
 				{
-					((ActiveArtifactItem) itemStack.getItem()).activate(playerEntity);
-					itemStack.setDamage(itemStack.getMaxDamage());
+					((ActiveArtifactItem)item).activate(playerEntity);
+					cooldownManager.set(item, ((ActiveArtifactItem) item).getCooldown());
 				}
 				else
 				{

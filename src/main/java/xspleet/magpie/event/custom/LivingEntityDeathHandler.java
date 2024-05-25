@@ -22,11 +22,11 @@ public class LivingEntityDeathHandler implements AllowDeath
 			Random r = new Random();
             if(r.nextInt(10)<3)
             {
-            	entity.addStatusEffect(new StatusEffectInstance(ModStatusEffects.AUTOTOMY,100,0,false,false));
+            	entity.addStatusEffect(new StatusEffectInstance(ModStatusEffects.AUTOTOMY,300,0,false,false));
             	entity.setHealth(1);
             	if(entity instanceof PlayerEntity playerEntity)
             	{
-                	TrinketsUtil.dropArtifact(playerEntity, ModItems.LIZARDS_TAIL).setPickupDelay(100);;
+                	TrinketsUtil.dropArtifact(playerEntity, ModItems.LIZARDS_TAIL).setPickupDelay(300);;
             	}
             	return false;
             }

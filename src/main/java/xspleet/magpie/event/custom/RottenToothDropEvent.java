@@ -34,7 +34,6 @@ public class RottenToothDropEvent implements AllowDamage {
     {
         if((entity instanceof ZombieEntity || entity instanceof ZombieVillagerEntity) && damageSource.getName().equals("player") && ((PlayerEntity)damageSource.getAttacker()).getEquippedStack(EquipmentSlot.MAINHAND).getItem() == Items.AIR)
         {
-            damageSource.getAttacker().sendMessage(Text.literal("You are a monster!"));
             if((new Random().nextInt(100)) == 0)
             {
                 ItemEntity rottenTooth = new ItemEntity(entity.world, entity.getX(), entity.getY(), entity.getZ(), new ItemStack(ModItems.ROTTEN_TOOTH));

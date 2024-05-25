@@ -46,7 +46,7 @@ public class ForkItem extends ArtifactItem
         if(!world.isClient())
         {
         	counter=Math.min(counter+1,40);
-            if(world.hasRain(entity.getBlockPos()))
+            if(world.hasRain(entity.getBlockPos()) && entity.isOnGround())
             {
             	Random r = new Random();
                 if(counter == 40 && r.nextInt(1000)<3)

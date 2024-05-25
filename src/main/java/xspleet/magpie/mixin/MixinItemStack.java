@@ -23,7 +23,6 @@ public abstract class MixinItemStack
     {
         if(entity.getEquippedStack(EquipmentSlot.LEGS) == ((ItemStack)(Object)this))
         {
-            entity.sendMessage(Text.literal("Oh no, my pant broke :("));
             if((new Random().nextInt(1000)) == 0)
             {
                 ItemEntity pocket = new ItemEntity(entity.world, entity.getX(), entity.getY(), entity.getZ(), new ItemStack(ModItems.POCKET));

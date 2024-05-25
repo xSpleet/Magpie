@@ -9,6 +9,7 @@ import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
@@ -102,8 +103,10 @@ public class ArtifactItem extends TrinketItem
         addArtifactRarity(tooltip);
         if(Screen.hasShiftDown())
         {
-            if(stack.getItem() instanceof ActiveArtifactItem)
-                tooltip.add(Text.translatable("item.magpie.tooltip.recharge", stack.getMaxDamage()/20 + " "));
+            if(stack.getItem() instanceof ActiveArtifactItem activeArtifact)
+            {
+                tooltip.add(Text.translatable("item.magpie.tooltip.recharge", activeArtifact.getCooldown()/20 + " "));
+            }
             TextFormatter.addTooltips(Text.translatable("item.magpie.tooltip." + stack.getItem()),tooltip);
         }
         else
