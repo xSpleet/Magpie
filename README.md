@@ -20,14 +20,8 @@ As soon as you equip the artifact, its effect is working. Lucky Pebble is a pass
 
 ## Active Artifacts
 
-You have already read the phrases “Passive artifact” and “Active artifact”, so let’s look at the differences.
-
 The bonuses (and negatives) of passive artifacts are active all the time - as soon as you equip them, you are good to go.  
 
 Active artifacts are different. Active artifacts go in a different slot, which is marked by a coin with lightning, have a recharge time and don’t give you a constant effect. You have to use them to get the bonus. You can do that by pressing ‘U’.
 
-For example let’s take the active artifact Umbrella. When you equip it, you don’t get any bonus. Isn’t it sad?
-
-Try pressing ‘U’! The charge of the artifact is used up, and you get feather falling. You’re just like Mary Poppins! 
-
-But if you try to press ‘U’ again - nothing happens! It is because the artifact isn’t recharged yet. Remember the recharge time? It is the time you need to wait before using the active artifact again. The active artifact is recharging when it is equipped and does not charge in the inventory, in a chest and on the ground!
+Remember the recharge time? It is the time you need to wait before using the active artifact again.
