@@ -8,17 +8,11 @@ import dev.emi.trinkets.api.TrinketItem;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
-import xspleet.magpie.MagpieMod;
-
-import static xspleet.magpie.MagpieMod.NO_DAMAGE;
 
 public class ArtifactItem extends TrinketItem
 {
@@ -53,7 +47,7 @@ public class ArtifactItem extends TrinketItem
         }
     }
 
-    protected ArrayList<ArtifactModifier> artifactModifiers = new ArrayList<ArtifactModifier>(0);
+    protected ArrayList<ArtifactModifier> artifactModifiers = new ArrayList<>(0);
 
     @Override
     public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) 

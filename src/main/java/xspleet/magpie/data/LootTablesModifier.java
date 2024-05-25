@@ -22,8 +22,6 @@ public class LootTablesModifier
             new Identifier("minecraft", "chests/village/village_savanna_house");
     private static final Identifier VILLAGE_DESERT_HOUSE_CHEST_ID =
             new Identifier("minecraft", "chests/village/village_desert_house");
-    private static final Identifier VILLAGE_SNOWY_HOUSE_CHEST_ID =
-            new Identifier("minecraft", "chests/village/village_snowy_house");
     private static final Identifier VILLAGE_TAIGA_HOUSE_CHEST_ID =
             new Identifier("minecraft", "chests/village/village_taiga_house");
     private static final Identifier VILLAGE_PLAINS_HOUSE_CHEST_ID =
@@ -201,15 +199,6 @@ public class LootTablesModifier
                 tableBuilder.pool(poolBuilder.build());
             }
 
-            if(id.equals(BASTION_TREASURE_CHEST_ID)) {
-                LootPool.Builder poolBuilder = LootPool.builder()
-                        .conditionally(RandomChanceLootCondition.builder(0.04f))
-                        .rolls(ConstantLootNumberProvider.create(1))
-                        .with(ItemEntry.builder(ModItems.IGNIS)
-                                .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1))));
-                tableBuilder.pool(poolBuilder.build());
-            }
-
             if(id.equals(DESERT_PYRAMID_CHEST_ID)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
                         .conditionally(RandomChanceLootCondition.builder(0.1f))
@@ -225,7 +214,7 @@ public class LootTablesModifier
 
             if(id.equals(SHIPWRECK_TREASURE_CHEST_ID)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
-                        .conditionally(RandomChanceLootCondition.builder(0.01f))
+                        .conditionally(RandomChanceLootCondition.builder(0.05f))
                         .rolls(ConstantLootNumberProvider.create(1))
                         .with(ItemEntry.builder(ModItems.LIGHT_BULB)
                                 .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)))

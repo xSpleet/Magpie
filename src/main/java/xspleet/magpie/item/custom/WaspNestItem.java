@@ -2,19 +2,15 @@ package xspleet.magpie.item.custom;
 
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.LivingEntity;
-import net.minecraft.entity.attribute.EntityAttributeModifier;
-import net.minecraft.entity.attribute.EntityAttributes;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.passive.BeeEntity;
-import net.minecraft.text.Text;
 import net.minecraft.world.Difficulty;
 import xspleet.magpie.effect.ModStatusEffects;
 import xspleet.magpie.util.ArtifactItem;
 import xspleet.magpie.util.CombatModifier;
 
 import java.util.Random;
-import java.util.UUID;
 
 import static xspleet.magpie.MagpieMod.NO_DAMAGE;
 
@@ -40,7 +36,7 @@ public class WaspNestItem extends ArtifactItem implements CombatModifier
                     bee.addStatusEffect(new StatusEffectInstance(ModStatusEffects.ANGY, 200, 0, false, false));
                     bee.setPosition(entity.getPos());
                     bee.setAngryAt(attacker.getUuid());
-                    bee.setTarget((LivingEntity) attacker);
+                    bee.setTarget(attacker);
                     bee.setAngerTime(200);
                     entity.getWorld().spawnEntity(bee);
                 }

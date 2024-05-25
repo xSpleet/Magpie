@@ -1,9 +1,6 @@
 package xspleet.magpie.util;
 
-import dev.emi.trinkets.api.SlotReference;
-import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.item.ItemStack;
 
 public class ActiveArtifactItem extends ArtifactItem
 {

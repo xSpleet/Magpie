@@ -26,7 +26,7 @@ public class LivingEntityDeathHandler implements AllowDeath
             	entity.setHealth(1);
             	if(entity instanceof PlayerEntity playerEntity)
             	{
-                	TrinketsUtil.dropArtifact(playerEntity, ModItems.LIZARDS_TAIL).setPickupDelay(300);;
+                	TrinketsUtil.dropArtifact(playerEntity, ModItems.LIZARDS_TAIL).setPickupDelay(300);
             	}
             	return false;
             }

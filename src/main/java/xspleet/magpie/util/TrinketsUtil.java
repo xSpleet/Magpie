@@ -21,7 +21,7 @@ public class TrinketsUtil
 	
 	static public List<Pair<SlotReference, ItemStack>> getActiveArtifacts(LivingEntity livingEntity)
 	{
-		List<Pair<SlotReference, ItemStack>> activeArtifacts = new ArrayList<Pair<SlotReference, ItemStack>>(0);
+		List<Pair<SlotReference, ItemStack>> activeArtifacts = new ArrayList<>(0);
 		if(TrinketsApi.getTrinketComponent(livingEntity).isPresent())
 		{
 			List<Pair<SlotReference, ItemStack>> allArtifacts = TrinketsApi.getTrinketComponent(livingEntity).get().getAllEquipped();
