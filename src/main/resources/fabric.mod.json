@@ -10,7 +10,7 @@
 	"contact": {
 		"sources": "https://github.com/FabricMC/fabric-example-mod"
 	},
-	"license": "CC0-1.0",
+	"license": "Apache-2.0 license",
 	"icon": "assets/magpie/icon.png",
 	"environment": "*",
 	"entrypoints": {
@@ -20,9 +20,6 @@
 		"client": [
 			"xspleet.magpie.MagpieModClient"
 		],
-		"fabric-datagen": [
-			"xspleet.magpie.MagpieModDataGenerator"
-		]
 	},
 	"mixins": [
 		"magpie.mixins.json"
