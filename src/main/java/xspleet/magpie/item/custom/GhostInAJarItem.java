@@ -20,12 +20,10 @@ public class GhostInAJarItem extends ArtifactItem
 
     @Override
     public void onOutgoingDamage(LivingEntity entity, DamageSource damageSource, float damageAmount) {
-        Objects.requireNonNull(damageSource.getAttacker()).sendMessage(Text.literal("ON OUTGOING"));
         damageSource.setBypassesArmor();
     }
     @Override
     public void onIncomingDamage(LivingEntity entity, DamageSource damageSource, float damageAmount) {
-        entity.sendMessage(Text.literal("ON INCOMING"));
         damageSource.setBypassesArmor();
     }
 }
