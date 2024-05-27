@@ -19,7 +19,7 @@
 		],
 		"client": [
 			"xspleet.magpie.MagpieModClient"
-		],
+		]
 	},
 	"mixins": [
 		"magpie.mixins.json"
