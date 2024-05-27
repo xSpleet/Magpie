@@ -8,7 +8,7 @@
 		"xSpleet"
 	],
 	"contact": {
-		"sources": "https://github.com/FabricMC/fabric-example-mod"
+		"sources": "https://github.com/xSpleet/Magpie"
 	},
 	"license": "Apache-2.0 license",
 	"icon": "assets/magpie/icon.png",
