@@ -16,8 +16,7 @@
 	"entrypoints": {
 		"main": [
 			"xspleet.magpie.MagpieMod"
-		],
-		"client": [
+		],		"client": [
 			"xspleet.magpie.MagpieModClient"
 		]
 	},
