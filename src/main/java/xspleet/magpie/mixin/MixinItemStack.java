@@ -25,8 +25,8 @@ public abstract class MixinItemStack
         {
             if((new Random().nextInt(1000)) == 0)
             {
-                ItemEntity pocket = new ItemEntity(entity.world, entity.getX(), entity.getY(), entity.getZ(), new ItemStack(ModItems.POCKET));
-                entity.world.spawnEntity(pocket);
+                ItemEntity pocket = new ItemEntity(entity.getWorld(), entity.getX(), entity.getY(), entity.getZ(), new ItemStack(ModItems.POCKET));
+                entity.getWorld().spawnEntity(pocket);
             }
         }
     }

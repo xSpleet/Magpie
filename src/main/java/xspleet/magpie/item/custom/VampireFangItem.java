@@ -19,7 +19,7 @@ public class VampireFangItem extends ArtifactItem
 	            0.2f,
 	            EntityAttributeModifier.Operation.MULTIPLY_TOTAL
 	    );
-		artifactModifiers.add(new ArtifactModifier((livingEntity->livingEntity.world.isNight()),EntityAttributes.GENERIC_MOVEMENT_SPEED,speedNightModifier));
+		artifactModifiers.add(new ArtifactModifier((livingEntity-> livingEntity.getWorld().isNight()),EntityAttributes.GENERIC_MOVEMENT_SPEED,speedNightModifier));
 		super.registerAttributeModifiers();
 	}
 

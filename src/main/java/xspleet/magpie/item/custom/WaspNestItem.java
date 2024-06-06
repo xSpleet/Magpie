@@ -26,7 +26,7 @@ public class WaspNestItem extends ArtifactItem implements CombatModifier
 
     @Override
     public void onIncomingDamage(LivingEntity entity, DamageSource damageSource, float damageAmount) {
-        if(entity.world.getDifficulty()!= Difficulty.PEACEFUL && damageAmount != NO_DAMAGE && damageSource.getAttacker() instanceof LivingEntity attacker)
+        if(entity.getWorld().getDifficulty()!= Difficulty.PEACEFUL && damageAmount != NO_DAMAGE && damageSource.getAttacker() instanceof LivingEntity attacker)
         {
             if(attacker.isAlive() && !attacker.isRemoved() && (new Random()).nextInt(10)<counter)
             {

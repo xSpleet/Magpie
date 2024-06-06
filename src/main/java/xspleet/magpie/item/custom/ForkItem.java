@@ -35,7 +35,7 @@ public class ForkItem extends ArtifactItem
 	    );
 	    
     	artifactModifiers.add(new ArtifactModifier((livingEntity->true),EntityAttributes.GENERIC_ATTACK_DAMAGE,attackModifier));
-    	artifactModifiers.add(new ArtifactModifier((livingEntity->livingEntity.world.hasRain(livingEntity.getBlockPos())),EntityAttributes.GENERIC_ATTACK_DAMAGE,rainAttackModifier));
+    	artifactModifiers.add(new ArtifactModifier((livingEntity-> livingEntity.getWorld().hasRain(livingEntity.getBlockPos())),EntityAttributes.GENERIC_ATTACK_DAMAGE,rainAttackModifier));
 
 		super.registerAttributeModifiers();
 	}

@@ -40,9 +40,9 @@ public class YangItem extends ArtifactItem
 	            EntityAttributeModifier.Operation.MULTIPLY_TOTAL
 	    );
 	    
-    	artifactModifiers.add(new ArtifactModifier((livingEntity->livingEntity.world.isDay()),EntityAttributes.GENERIC_ATTACK_DAMAGE,attackModifier));
-    	artifactModifiers.add(new ArtifactModifier((livingEntity->livingEntity.world.isDay()),EntityAttributes.GENERIC_MOVEMENT_SPEED,speedDayModifier));
-    	artifactModifiers.add(new ArtifactModifier((livingEntity->livingEntity.world.isNight()&&!TrinketsUtil.hasArtifact(livingEntity,ModItems.YIN)),EntityAttributes.GENERIC_MOVEMENT_SPEED,speedNightModifier));
+    	artifactModifiers.add(new ArtifactModifier((livingEntity-> livingEntity.getWorld().isDay()),EntityAttributes.GENERIC_ATTACK_DAMAGE,attackModifier));
+    	artifactModifiers.add(new ArtifactModifier((livingEntity-> livingEntity.getWorld().isDay()),EntityAttributes.GENERIC_MOVEMENT_SPEED,speedDayModifier));
+    	artifactModifiers.add(new ArtifactModifier((livingEntity-> livingEntity.getWorld().isNight()&&!TrinketsUtil.hasArtifact(livingEntity,ModItems.YIN)),EntityAttributes.GENERIC_MOVEMENT_SPEED,speedNightModifier));
 		super.registerAttributeModifiers();
 		
 	}

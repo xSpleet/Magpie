@@ -39,7 +39,6 @@ public class MagpieMod implements ModInitializer {
             else
                 return 0.0F;
         });
-		ModItemGroup.registerItemGroups();
 		ModItems.registerModItems();
 		ModStatusEffects.registerStatusEffects();
 		ModEvents.registerEvents();

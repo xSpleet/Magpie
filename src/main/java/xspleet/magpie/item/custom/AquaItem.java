@@ -13,7 +13,7 @@ public class AquaItem extends ArtifactItem
 	
 	@Override
 	public void tick(ItemStack stack, SlotReference slot, LivingEntity entity) {
-		if (entity.isSubmergedIn(FluidTags.WATER) && !entity.world.getBlockState(BlockPos.ofFloored(entity.getEyePos())).isOf(Blocks.BUBBLE_COLUMN))
+		if (entity.isSubmergedIn(FluidTags.WATER) && !entity.getWorld().getBlockState(BlockPos.ofFloored(entity.getEyePos())).isOf(Blocks.BUBBLE_COLUMN))
 			entity.setAir(entity.getMaxAir());
 		super.tick(stack, slot, entity);
 	}

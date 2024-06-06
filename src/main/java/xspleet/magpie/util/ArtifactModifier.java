@@ -58,7 +58,7 @@ public class ArtifactModifier
 	
 	public void update(LivingEntity livingEntity)
 	{
-		if(livingEntity.world.isClient())
+		if(livingEntity.getWorld().isClient())
     	{
 			return;
     	}
@@ -74,7 +74,7 @@ public class ArtifactModifier
 	
 	public void remove(LivingEntity livingEntity)
 	{
-		if(livingEntity.world.isClient())
+		if(livingEntity.getWorld().isClient())
     	{
 			return;
     	}

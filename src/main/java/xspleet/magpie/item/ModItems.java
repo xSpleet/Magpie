@@ -95,52 +95,45 @@ public class ModItems
     public static void registerModItems()
     {
         MagpieMod.LOGGER.info("Registering Mod Items for " + MagpieMod.MOD_ID);
-
-        addItemsToItemGroup();
     }
 
-    public static void addItemsToItemGroup()
+    public static void addItemsToEntries(ItemGroup.Entries entries)
     {
-        addToItemGroup(ModItemGroup.MAGPIE, FORK);
-        addToItemGroup(ModItemGroup.MAGPIE, LIGHT_BULB);
-        addToItemGroup(ModItemGroup.MAGPIE, RITUAL_CANDLE);
-        addToItemGroup(ModItemGroup.MAGPIE, ROTTEN_TOOTH);
-        addToItemGroup(ModItemGroup.MAGPIE, TRANQ_DART);
-        addToItemGroup(ModItemGroup.MAGPIE, BAG_OF_DUST);
-        addToItemGroup(ModItemGroup.MAGPIE, PLASTIC_SPOON);
-        addToItemGroup(ModItemGroup.MAGPIE, WAX_WING);
-        addToItemGroup(ModItemGroup.MAGPIE, AQUA);
-        addToItemGroup(ModItemGroup.MAGPIE, AER);
-        addToItemGroup(ModItemGroup.MAGPIE, TERRA);
-        addToItemGroup(ModItemGroup.MAGPIE, IGNIS);
-        addToItemGroup(ModItemGroup.MAGPIE, POTTED_CACTUS);
-        addToItemGroup(ModItemGroup.MAGPIE, YANG);
-        addToItemGroup(ModItemGroup.MAGPIE, YIN);
-        addToItemGroup(ModItemGroup.MAGPIE, GHOST_IN_A_JAR);
-        addToItemGroup(ModItemGroup.MAGPIE, LIZARDS_TAIL);
-        addToItemGroup(ModItemGroup.MAGPIE, AETHER);
-        addToItemGroup(ModItemGroup.MAGPIE, LUCKY_PEBBLE);
-        addToItemGroup(ModItemGroup.MAGPIE, LUCKY_STONE);
-        addToItemGroup(ModItemGroup.MAGPIE, LUCKY_ROCK);
-        addToItemGroup(ModItemGroup.MAGPIE, LUCKY_BOULDER);
-        addToItemGroup(ModItemGroup.MAGPIE, LIGHTNING_ARRESTER);
-        addToItemGroup(ModItemGroup.MAGPIE, MELATONIN_PILL);
-        addToItemGroup(ModItemGroup.MAGPIE, NERD_GLASSES);
-        addToItemGroup(ModItemGroup.MAGPIE, RAIN_MARACAS);
-        addToItemGroup(ModItemGroup.MAGPIE, VAMPIRE_FANG);
-        addToItemGroup(ModItemGroup.MAGPIE, UMBRELLA);
-        addToItemGroup(ModItemGroup.MAGPIE, POCKET);
-        addToItemGroup(ModItemGroup.MAGPIE, JUPITERS_THUNDERBOLT);
-        addToItemGroup(ModItemGroup.MAGPIE, URANUS_BLOOD);
-        addToItemGroup(ModItemGroup.MAGPIE, SELENES_TORCH);
-        addToItemGroup(ModItemGroup.MAGPIE, MARS_SPEAR);
-        addToItemGroup(ModItemGroup.MAGPIE, WASP_NEST);
-        addToItemGroup(ModItemGroup.MAGPIE, SALE_TAG);
-        addToItemGroup(ModItemGroup.MAGPIE, HOLY_GRAIL);
-    }
-
-    private static void addToItemGroup(ItemGroup group, Item item )
-    {
-        ItemGroupEvents.modifyEntriesEvent(group).register(entries -> entries.add(item));
+        entries.add(FORK);
+        entries.add(LIGHT_BULB);
+        entries.add(RITUAL_CANDLE);
+        entries.add(ROTTEN_TOOTH);
+        entries.add(TRANQ_DART);
+        entries.add(BAG_OF_DUST);
+        entries.add(PLASTIC_SPOON);
+        entries.add(WAX_WING);
+        entries.add(AQUA);
+        entries.add(AER);
+        entries.add(TERRA);
+        entries.add(IGNIS);
+        entries.add(POTTED_CACTUS);
+        entries.add(YANG);
+        entries.add(YIN);
+        entries.add(GHOST_IN_A_JAR);
+        entries.add(LIZARDS_TAIL);
+        entries.add(AETHER);
+        entries.add(LUCKY_PEBBLE);
+        entries.add(LUCKY_STONE);
+        entries.add(LUCKY_ROCK);
+        entries.add(LUCKY_BOULDER);
+        entries.add(LIGHTNING_ARRESTER);
+        entries.add(MELATONIN_PILL);
+        entries.add(NERD_GLASSES);
+        entries.add(RAIN_MARACAS);
+        entries.add(VAMPIRE_FANG);
+        entries.add(UMBRELLA);
+        entries.add(POCKET);
+        entries.add(JUPITERS_THUNDERBOLT);
+        entries.add(URANUS_BLOOD);
+        entries.add(SELENES_TORCH);
+        entries.add(MARS_SPEAR);
+        entries.add(WASP_NEST);
+        entries.add(SALE_TAG);
+        entries.add(HOLY_GRAIL);
     }
 }

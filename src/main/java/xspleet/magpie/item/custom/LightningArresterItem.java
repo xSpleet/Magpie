@@ -28,7 +28,7 @@ public class LightningArresterItem extends ArtifactItem implements CombatModifie
             List<Pair<SlotReference, ItemStack>> activeArtifacts = TrinketsUtil.getActiveArtifacts(entity);
             for(Pair<SlotReference,ItemStack> activeArtifact:activeArtifacts)
             {
-                if(!entity.world.isClient())
+                if(!entity.getWorld().isClient())
                 {
                     activeArtifact.getRight().setDamage(0);
                 }

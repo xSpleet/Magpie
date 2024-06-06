@@ -5,7 +5,6 @@ import net.minecraft.entity.Entity;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
 import net.minecraft.entity.player.PlayerEntity;
-import net.minecraft.text.Text;
 import xspleet.magpie.util.ArtifactItem;
 import xspleet.magpie.util.CombatModifier;
 import xspleet.magpie.util.TrinketsUtil;
@@ -20,7 +19,7 @@ public class CombatModifiersHandler implements AllowDamage {
 	{
 		boolean dealDamage = true;
 		Entity attacker = damageSource.getAttacker();
-		if(entity instanceof PlayerEntity playerAttacked && !playerAttacked.world.isClient())
+		if(entity instanceof PlayerEntity playerAttacked && !playerAttacked.getWorld().isClient())
 		{
 			List<ArtifactItem> combatModifiers = TrinketsUtil.getCombatModifiers(playerAttacked);
 			for(ArtifactItem combatModifier:combatModifiers)
@@ -29,7 +28,7 @@ public class CombatModifiersHandler implements AllowDamage {
 			}
 		}
 
-		if(attacker instanceof PlayerEntity playerAttacker && !playerAttacker.world.isClient())
+		if(attacker instanceof PlayerEntity playerAttacker && !playerAttacker.getWorld().isClient())
 		{
 			List<ArtifactItem> combatModifiers = TrinketsUtil.getCombatModifiers(playerAttacker);
 			for(ArtifactItem combatModifier:combatModifiers)
@@ -39,7 +38,7 @@ public class CombatModifiersHandler implements AllowDamage {
 		}
 		if(!dealDamage)
 			damageAmount = NO_DAMAGE;
-		if(entity instanceof PlayerEntity playerAttacked && !playerAttacked.world.isClient())
+		if(entity instanceof PlayerEntity playerAttacked && !playerAttacked.getWorld().isClient())
 		{
 			List<ArtifactItem> combatModifiers = TrinketsUtil.getCombatModifiers(playerAttacked);
 			for(ArtifactItem combatModifier:combatModifiers)
@@ -47,7 +46,7 @@ public class CombatModifiersHandler implements AllowDamage {
 				((CombatModifier)combatModifier).onIncomingDamage(entity, damageSource, damageAmount);
 			}
 		}
-		if(attacker instanceof PlayerEntity playerAttacker && !playerAttacker.world.isClient())
+		if(attacker instanceof PlayerEntity playerAttacker && !playerAttacker.getWorld().isClient())
 		{
 			List<ArtifactItem> combatModifiers = TrinketsUtil.getCombatModifiers(playerAttacker);
 			for(ArtifactItem combatModifier:combatModifiers)

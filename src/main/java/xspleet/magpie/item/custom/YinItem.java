@@ -33,9 +33,9 @@ public class YinItem extends ArtifactItem
 	            0.2f,
 	            EntityAttributeModifier.Operation.MULTIPLY_TOTAL
 	    );
-	    artifactModifiers.add(new ArtifactModifier((livingEntity->!livingEntity.world.isNight()),EntityAttributes.GENERIC_ATTACK_DAMAGE,attackModifier));
-		artifactModifiers.add(new ArtifactModifier((livingEntity->livingEntity.world.isNight()),EntityAttributes.GENERIC_MOVEMENT_SPEED,speedNightModifier));
-		artifactModifiers.add(new ArtifactModifier((livingEntity->livingEntity.world.isDay()&&!TrinketsUtil.hasArtifact(livingEntity,ModItems.YANG)),EntityAttributes.GENERIC_MOVEMENT_SPEED,speedDayModifier));
+	    artifactModifiers.add(new ArtifactModifier((livingEntity->!livingEntity.getWorld().isNight()),EntityAttributes.GENERIC_ATTACK_DAMAGE,attackModifier));
+		artifactModifiers.add(new ArtifactModifier((livingEntity-> livingEntity.getWorld().isNight()),EntityAttributes.GENERIC_MOVEMENT_SPEED,speedNightModifier));
+		artifactModifiers.add(new ArtifactModifier((livingEntity-> livingEntity.getWorld().isDay()&&!TrinketsUtil.hasArtifact(livingEntity,ModItems.YANG)),EntityAttributes.GENERIC_MOVEMENT_SPEED,speedDayModifier));
 		super.registerAttributeModifiers();
 	}
 	

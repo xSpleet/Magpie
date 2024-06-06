@@ -55,7 +55,7 @@ public abstract class MixinLivingEntity
     private float injected(float value)
     {
         LivingEntity entity = (LivingEntity)(Object)this;
-        if(damageSource.getAttacker() instanceof PlayerEntity playerAttacker && !playerAttacker.world.isClient())
+        if(damageSource.getAttacker() instanceof PlayerEntity playerAttacker && !playerAttacker.getWorld().isClient())
         {
             List<ArtifactItem> combatModifiers = TrinketsUtil.getCombatModifiers(playerAttacker);
             for(ArtifactItem combatModifier:combatModifiers)
@@ -63,7 +63,7 @@ public abstract class MixinLivingEntity
                 value = ((CombatModifier)combatModifier).modifyOutgoingDamage(entity,damageSource,value);
             }
         }
-        if(entity instanceof PlayerEntity playerAttacked && !playerAttacked.world.isClient())
+        if(entity instanceof PlayerEntity playerAttacked && !playerAttacked.getWorld().isClient())
         {
             List<ArtifactItem> combatModifiers = TrinketsUtil.getCombatModifiers(playerAttacked);
             for(ArtifactItem combatModifier:combatModifiers)

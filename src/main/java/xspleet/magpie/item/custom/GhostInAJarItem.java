@@ -19,12 +19,12 @@ public class GhostInAJarItem extends ArtifactItem
 
     @Override
     public void onOutgoingDamage(LivingEntity entity, DamageSource damageSource, float damageAmount) {
-        entity.damage(entity.world.getDamageSources().create(GENERIC, damageSource.getSource(), damageSource.getAttacker()), damageAmount);
+        entity.damage(entity.getWorld().getDamageSources().create(GENERIC, damageSource.getSource(), damageSource.getAttacker()), damageAmount);
     }
 
     @Override
     public void onIncomingDamage(LivingEntity entity, DamageSource damageSource, float damageAmount) {
-        entity.damage(entity.world.getDamageSources().create(GENERIC, damageSource.getSource(), damageSource.getAttacker()), damageAmount);
+        entity.damage(entity.getWorld().getDamageSources().create(GENERIC, damageSource.getSource(), damageSource.getAttacker()), damageAmount);
     }
 
 }

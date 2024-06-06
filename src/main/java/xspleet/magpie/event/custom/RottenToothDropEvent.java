@@ -22,8 +22,8 @@ public class RottenToothDropEvent implements AllowDamage {
         {
             if((new Random().nextInt(100)) == 0)
             {
-                ItemEntity rottenTooth = new ItemEntity(entity.world, entity.getX(), entity.getY(), entity.getZ(), new ItemStack(ModItems.ROTTEN_TOOTH));
-                entity.world.spawnEntity(rottenTooth);
+                ItemEntity rottenTooth = new ItemEntity(entity.getWorld(), entity.getX(), entity.getY(), entity.getZ(), new ItemStack(ModItems.ROTTEN_TOOTH));
+                entity.getWorld().spawnEntity(rottenTooth);
             }
         }
         return true;

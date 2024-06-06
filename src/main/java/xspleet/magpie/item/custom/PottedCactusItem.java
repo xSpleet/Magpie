@@ -25,6 +25,6 @@ public class PottedCactusItem extends ArtifactItem implements CombatModifier
 	@Override
 	public void onIncomingDamage(LivingEntity entity, DamageSource damageSource, float damageAmount) {
 		if(damageAmount!=NO_DAMAGE && damageSource.getAttacker() instanceof LivingEntity livingEntity)
-			livingEntity.damage(entity.world.getDamageSources().create(CACTUS, damageSource.getSource(), damageSource.getAttacker()), damageAmount);
+			livingEntity.damage(entity.getWorld().getDamageSources().create(CACTUS, damageSource.getSource(), damageSource.getAttacker()), damageAmount);
 	}
 }
