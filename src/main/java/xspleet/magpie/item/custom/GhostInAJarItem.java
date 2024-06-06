@@ -3,11 +3,10 @@ package xspleet.magpie.item.custom;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
-import net.minecraft.text.Text;
 import xspleet.magpie.util.ArtifactItem;
 import xspleet.magpie.util.CombatModifier;
 
-import java.util.Objects;
+import static net.minecraft.entity.damage.DamageTypes.GENERIC;
 
 public class GhostInAJarItem extends ArtifactItem
                              implements CombatModifier
@@ -20,10 +19,12 @@ public class GhostInAJarItem extends ArtifactItem
 
     @Override
     public void onOutgoingDamage(LivingEntity entity, DamageSource damageSource, float damageAmount) {
-        damageSource.setBypassesArmor();
+        entity.damage(entity.world.getDamageSources().create(GENERIC, damageSource.getSource(), damageSource.getAttacker()), damageAmount);
     }
+
     @Override
     public void onIncomingDamage(LivingEntity entity, DamageSource damageSource, float damageAmount) {
-        damageSource.setBypassesArmor();
+        entity.damage(entity.world.getDamageSources().create(GENERIC, damageSource.getSource(), damageSource.getAttacker()), damageAmount);
     }
+
 }

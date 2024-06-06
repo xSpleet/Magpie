@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "magpie",
-	"version": "1.0.0",
+	"version": "1.0.0-1.19.4",
 	"name": "Magpie",
 	"description": "Collect various artifacts across the world and use them to get interesting bonuses",
 	"authors": [
@@ -16,7 +16,8 @@
 	"entrypoints": {
 		"main": [
 			"xspleet.magpie.MagpieMod"
-		],		"client": [
+		],
+		"client": [
 			"xspleet.magpie.MagpieModClient"
 		]
 	},

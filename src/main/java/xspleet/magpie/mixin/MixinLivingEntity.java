@@ -25,7 +25,8 @@ import java.util.Random;
 public abstract class MixinLivingEntity
 {
     @Unique
-    DamageSource damageSource = new DamageSource("NULL");
+    DamageSource damageSource = null;
+
 
     @WrapWithCondition(method = "eatFood",
             at = @At(value = "INVOKE", target = "Lnet/minecraft/item/ItemStack;decrement(I)V"))

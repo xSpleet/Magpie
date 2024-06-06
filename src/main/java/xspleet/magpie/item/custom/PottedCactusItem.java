@@ -7,6 +7,7 @@ import xspleet.magpie.util.CombatModifier;
 
 import java.util.Objects;
 
+import static net.minecraft.entity.damage.DamageTypes.CACTUS;
 import static xspleet.magpie.MagpieMod.NO_DAMAGE;
 
 public class PottedCactusItem extends ArtifactItem implements CombatModifier
@@ -24,6 +25,6 @@ public class PottedCactusItem extends ArtifactItem implements CombatModifier
 	@Override
 	public void onIncomingDamage(LivingEntity entity, DamageSource damageSource, float damageAmount) {
 		if(damageAmount!=NO_DAMAGE && damageSource.getAttacker() instanceof LivingEntity livingEntity)
-			livingEntity.damage(DamageSource.CACTUS, (float) Math.max(damageAmount*0.3,1));
+			livingEntity.damage(entity.world.getDamageSources().create(CACTUS, damageSource.getSource(), damageSource.getAttacker()), damageAmount);
 	}
 }
