@@ -1,7 +1,7 @@
 {
 	"schemaVersion": 1,
 	"id": "magpie",
-	"version": "1.0.0-1.20.1",
+	"version": "1.0.0-1.20.2",
 	"name": "Magpie",
 	"description": "Collect various artifacts across the world and use them to get interesting bonuses",
 	"authors": [

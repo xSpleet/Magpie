@@ -21,15 +21,14 @@ public class ModStatusEffects
     public static StatusEffect SOLID_GROUND;
     public static StatusEffect SOFT_BREEZE;
 
-    private static StatusEffect register(int rawId, String id, StatusEffect entry) {
-        return Registry.register(Registries.STATUS_EFFECT, rawId, id, entry);
+    private static StatusEffect register(String id, StatusEffect entry) {
+        return Registry.register(Registries.STATUS_EFFECT, id, entry);
     }
 
     public static void registerStatusEffects()
     {
         MagpieMod.LOGGER.info("Registering custom status effects");
         AUTOTOMY = ModStatusEffects.register(
-                31415901,
                 "magpie:autotomy",
                 new AutotomyEffect(
                         StatusEffectCategory.BENEFICIAL,
@@ -43,7 +42,6 @@ public class ModStatusEffects
                         )
         );
         TIDAL_FLOW = ModStatusEffects.register(
-                31415902,
                 "magpie:tidal_flow",
                 new TidalFlowEffect(
                         StatusEffectCategory.BENEFICIAL,
@@ -51,7 +49,6 @@ public class ModStatusEffects
                 )
         );
         INNER_FLAME = ModStatusEffects.register(
-                31415903,
                 "magpie:inner_flame",
                 new InnerFlameEffect(
                         StatusEffectCategory.BENEFICIAL,
@@ -59,7 +56,6 @@ public class ModStatusEffects
                 )
         );
         SOLID_GROUND = ModStatusEffects.register(
-                31415904,
                 "magpie:solid_ground",
                 new SolidGroundEffect(
                         StatusEffectCategory.BENEFICIAL,
@@ -73,7 +69,6 @@ public class ModStatusEffects
                         )
         );
         SOFT_BREEZE = ModStatusEffects.register(
-                31415905,
                 "magpie:soft_breeze",
                 new SoftBreezeEffect(
                         StatusEffectCategory.BENEFICIAL,
@@ -87,7 +82,6 @@ public class ModStatusEffects
                         )
         );
         ANGY = ModStatusEffects.register(
-                31415906,
                 "magpie:angy",
                 new AngyEffect(
                         StatusEffectCategory.NEUTRAL,

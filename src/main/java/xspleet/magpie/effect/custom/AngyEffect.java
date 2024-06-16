@@ -12,9 +12,8 @@ public class AngyEffect extends StatusEffect {
     public AngyEffect(StatusEffectCategory category, int color) {
         super(category, color);
     }
-
-    @Override
-    public void onRemoved(LivingEntity entity, AttributeContainer attributes, int amplifier) {
+    LivingEntity entity;
+    public void onRemoved(AttributeContainer attributes) {
         if(entity instanceof BeeEntity)
             entity.kill();
     }
@@ -26,6 +25,7 @@ public class AngyEffect extends StatusEffect {
 
     @Override
     public void applyUpdateEffect(LivingEntity entity, int amplifier) {
+        this.entity = entity;
         if(entity instanceof BeeEntity bee)
             if(!bee.hasAngerTime())
                 bee.kill();

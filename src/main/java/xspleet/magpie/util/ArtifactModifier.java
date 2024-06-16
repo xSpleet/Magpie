@@ -68,7 +68,7 @@ public class ArtifactModifier
 		}
 		if(shouldRemove(livingEntity))
 		{
-			getAttributeInstance(livingEntity).removeModifier(attributeModifier);
+			getAttributeInstance(livingEntity).removeModifier(attributeModifier.getId());
 		}
 	}
 	
@@ -80,7 +80,7 @@ public class ArtifactModifier
     	}
 		if(getAttributeInstance(livingEntity).hasModifier(attributeModifier))
 		{
-			getAttributeInstance(livingEntity).removeModifier(attributeModifier);
+			getAttributeInstance(livingEntity).removeModifier(attributeModifier.getId());
 		}
 	}
 }
