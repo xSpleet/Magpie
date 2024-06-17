@@ -40,6 +40,7 @@ public class MagpieMod implements ModInitializer {
                 return 0.0F;
         });
 		ModItems.registerModItems();
+		ModItemGroup.registerItemGroup();
 		ModStatusEffects.registerStatusEffects();
 		ModEvents.registerEvents();
 		TradeOfferModifier.modifyTrades();
