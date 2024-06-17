@@ -8,22 +8,34 @@ import dev.emi.trinkets.api.TrinketItem;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.LivingEntity;
+import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.item.ItemStack;
 import net.minecraft.text.Text;
 import net.minecraft.util.Formatting;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
+import xspleet.magpie.item.custom.ForkItem;
 
 public class ArtifactItem extends TrinketItem
 {
 
     public ArtifactRarity artifactRarity = ArtifactRarity.COMMON;
 
+
+    /**
+     * Used when registering the item to set the artifact rarity
+     * @see #appendTooltip(ItemStack, World, List, TooltipContext)
+     * @see ArtifactRarity
+     * @param artifactRarity the rarity of the Artifact
+     * @return the Artifact with the modified rarity
+     *
+     */
     public ArtifactItem rarity(ArtifactRarity artifactRarity)
     {
         this.artifactRarity = artifactRarity;
         return this;
     }
+
     private void addArtifactRarity(List<Text> tooltip)
     {
         switch (artifactRarity)
@@ -49,6 +61,11 @@ public class ArtifactItem extends TrinketItem
 
     protected ArrayList<ArtifactModifier> artifactModifiers = new ArrayList<>(0);
 
+
+    /**
+     *
+     * Forbids the player to have the same Artifact equipped twice
+     */
     @Override
     public boolean canEquip(ItemStack stack, SlotReference slot, LivingEntity entity) 
     {
@@ -58,10 +75,17 @@ public class ArtifactItem extends TrinketItem
         }
         return super.canEquip(stack, slot, entity);
     }
-    
+
+
+    /**
+     * Adds AttributeModifiers to the list of ArtifactModifiers
+     * @see ArtifactModifier
+     * @see #onEquip(ItemStack, SlotReference, LivingEntity)
+     *
+     */
     protected void registerAttributeModifiers() {
 	}
-    
+
     @Override
     public void onEquip(ItemStack stack, SlotReference slot, LivingEntity entity) 
     {
@@ -91,6 +115,15 @@ public class ArtifactItem extends TrinketItem
 	    }
     }
 
+    /**
+     * Adds the tooltips written in the lang file
+     * For the description of the way of writing the lang file look at the Wiki or an example
+     * @see #rarity(ArtifactRarity)
+     * @param stack
+     * @param world
+     * @param tooltip the list of tooltips to show
+     * @param context
+     */
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
