@@ -6,7 +6,7 @@ import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.attribute.EntityAttribute;
 import net.minecraft.entity.attribute.EntityAttributeInstance;
 import net.minecraft.entity.attribute.EntityAttributeModifier;
- 
+
 public class ArtifactModifier 
 {
 
@@ -15,7 +15,7 @@ public class ArtifactModifier
 	private EntityAttributeModifier attributeModifier;
 
 	/**
-	 * Creates a new ArtifactModifier with a attributeModifier, which is activated when the livingPredicate is true, ans is applied to the attribute
+	 * Creates a new ArtifactModifier with a attributeModifier, which is activated when the livingPredicate is true, and is applied to the attribute
 	 * @param livingPredicate
 	 * @param attribute
 	 * @param attributeModifier
