@@ -11,6 +11,9 @@ import java.util.List;
 
 import static xspleet.magpie.MagpieMod.SYMBOLS_PER_LINE;
 
+/**
+ * The class describing the function of the formatting of the descriptions of items. To see the specification of the markup please look at the wiki or at an example
+ */
 public class TextFormatter
 {
 
