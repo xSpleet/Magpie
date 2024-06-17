@@ -108,10 +108,14 @@ public class LootTablesModifier
 
             if(id.equals(VILLAGE_PLAINS_HOUSE_CHEST_ID)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
-                        .conditionally(RandomChanceLootCondition.builder(0.06f))
+                        .conditionally(RandomChanceLootCondition.builder(0.12f))
                         .rolls(ConstantLootNumberProvider.create(1))
                         .with(ItemEntry.builder(ModItems.WASP_NEST)
-                                .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1))));
+                                .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)))
+                                .weight(1))
+                        .with(ItemEntry.builder(ModItems.SALE_TAG)
+                                .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)))
+                                .weight(1));
                 tableBuilder.pool(poolBuilder.build());
             }
 
@@ -214,7 +218,7 @@ public class LootTablesModifier
 
             if(id.equals(SHIPWRECK_TREASURE_CHEST_ID)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
-                        .conditionally(RandomChanceLootCondition.builder(0.05f))
+                        .conditionally(RandomChanceLootCondition.builder(0.20f))
                         .rolls(ConstantLootNumberProvider.create(1))
                         .with(ItemEntry.builder(ModItems.LIGHT_BULB)
                                 .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)))
