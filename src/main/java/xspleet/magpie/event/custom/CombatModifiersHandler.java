@@ -15,6 +15,13 @@ import static xspleet.magpie.MagpieMod.NO_DAMAGE;
 
 public class CombatModifiersHandler implements AllowDamage {
 
+	/**
+	 * @see CombatModifier
+	 * @param entity the entity
+	 * @param damageSource the source of the damage
+	 * @param damageAmount the amount of damage that the entity will take (before mitigations)
+	 * @return whether to deal damage or not. If the damage is < 0 or one of the CombatModifier blocks the damage, the damage is not dealt.
+	 */
 	public boolean allowDamage(LivingEntity entity, DamageSource damageSource, float damageAmount) 
 	{
 		boolean dealDamage = true;

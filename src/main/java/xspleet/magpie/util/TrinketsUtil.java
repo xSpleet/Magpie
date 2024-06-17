@@ -18,7 +18,14 @@ import net.minecraft.util.Pair;
 
 public class TrinketsUtil 
 {
-	
+
+	/**
+	 * @see SlotReference
+	 * @see ActiveArtifactItem
+	 * @see #activateAllActiveArtifacts(PlayerEntity)
+	 * @param livingEntity
+	 * @return the list of SlotReferences and ItemStacks, the items in which are ActiveArtifactItems
+	 */
 	static public List<Pair<SlotReference, ItemStack>> getActiveArtifacts(LivingEntity livingEntity)
 	{
 		List<Pair<SlotReference, ItemStack>> activeArtifacts = new ArrayList<>(0);
@@ -36,6 +43,11 @@ public class TrinketsUtil
 		return activeArtifacts;
 	}
 
+	/**
+	 *
+	 * @param livingEntity
+	 * @return the List of ArtifactItems which have the interface CombatModifier
+	 */
 	static public List<ArtifactItem> getCombatModifiers(LivingEntity livingEntity)
 	{
 		List<ArtifactItem> combatModifiers = new ArrayList<>(0);
@@ -52,20 +64,42 @@ public class TrinketsUtil
 		}
 		return combatModifiers;
 	}
-	
+
+	/**
+	 *
+	 * @param livingEntity the entity checked
+	 * @param item the item checked
+	 * @return whether the livingEntity has the item equipped
+	 */
 	static public boolean hasArtifact(LivingEntity livingEntity, Item item)
 	{
 		return TrinketsApi.getTrinketComponent(livingEntity).isPresent() && TrinketsApi.getTrinketComponent(livingEntity).get().isEquipped(item);
 	}
-	
+
+	/**
+	 * Drops the given artifact from the playerEntity
+	 * @see xspleet.magpie.item.custom.LizardsTailItem
+	 * @param playerEntity
+	 * @param item
+	 * @return the ItemEntity that was dropped
+	 */
 	static public ItemEntity dropArtifact(PlayerEntity playerEntity, Item item)
 	{
+		if(!TrinketsApi.getTrinketComponent(playerEntity).isPresent())
+			return null;
 		ItemStack stack = TrinketsApi.getTrinketComponent(playerEntity).get().getEquipped(item).get(0).getRight();
 		SlotReference ref = TrinketsApi.getTrinketComponent(playerEntity).get().getEquipped(item).get(0).getLeft();
 		ref.inventory().setStack(ref.index(), ItemStack.EMPTY);
 		return playerEntity.dropStack(stack);
 	}
-	
+
+	/**
+	 * @see #getActiveArtifacts(LivingEntity)
+	 * @see ActiveArtifactItem#activate(PlayerEntity)
+	 * It iterates through all the Artifacts the player has eqquiped and activates the charged active artifact
+	 * @param playerEntity
+	 * @return
+	 */
 	static public boolean activateAllActiveArtifacts(PlayerEntity playerEntity)
 	{
 		ItemCooldownManager cooldownManager = playerEntity.getItemCooldownManager();

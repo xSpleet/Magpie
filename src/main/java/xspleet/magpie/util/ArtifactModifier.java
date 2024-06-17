@@ -9,10 +9,17 @@ import net.minecraft.entity.attribute.EntityAttributeModifier;
  
 public class ArtifactModifier 
 {
+
 	private Predicate<LivingEntity> livingPredicate;
 	private EntityAttribute attribute;
 	private EntityAttributeModifier attributeModifier;
-	
+
+	/**
+	 * Creates a new ArtifactModifier with a attributeModifier, which is activated when the livingPredicate is true, ans is applied to the attribute
+	 * @param livingPredicate
+	 * @param attribute
+	 * @param attributeModifier
+	 */
 	public ArtifactModifier(Predicate<LivingEntity> livingPredicate, EntityAttribute attribute, EntityAttributeModifier attributeModifier)
 	{
 		this.livingPredicate = livingPredicate;
@@ -55,7 +62,11 @@ public class ArtifactModifier
 	{
 		return !livingPredicate.test(livingEntity)&&getAttributeInstance(livingEntity).hasModifier(attributeModifier);
 	}
-	
+
+	/**
+	 * Updates the AttributeModifiers on the livingEntity
+	 * @param livingEntity
+	 */
 	public void update(LivingEntity livingEntity)
 	{
 		if(livingEntity.getWorld().isClient())
@@ -71,7 +82,12 @@ public class ArtifactModifier
 			getAttributeInstance(livingEntity).removeModifier(attributeModifier.getId());
 		}
 	}
-	
+
+
+	/**
+	 * Removes the AttributeModifiers from the livingEntity
+	 * @param livingEntity
+	 */
 	public void remove(LivingEntity livingEntity)
 	{
 		if(livingEntity.getWorld().isClient())
