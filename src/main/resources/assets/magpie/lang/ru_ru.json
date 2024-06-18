@@ -31,7 +31,7 @@
 
   "item.magpie.ghost_in_a_jar":"Дух в банке",
   "item.magpie.description.ghost_in_a_jar": "<GRAY~ITALIC>Ты чувствуешь себя прозрачным",
-  "item.magpie.tooltip.ghost_in_a_jar": "<DARK_GREEN>Весь исходящий урон игнорирует броню&nwln;<RED>Весь входящий урон игнорирует броню",
+  "item.magpie.tooltip.ghost_in_a_jar": "<DARK_GREEN>Весь исходящий урон игнорирует броню&nwln;<RED>Весь входящий урон игнорирует броню<>Игнорирует зачарования",
 
   "item.magpie.holy_grail":"Святой Грааль",
   "item.magpie.description.holy_grail": "<GRAY~ITALIC>Кровь мученика",
