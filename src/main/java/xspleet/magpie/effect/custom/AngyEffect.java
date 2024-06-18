@@ -14,12 +14,6 @@ public class AngyEffect extends StatusEffect {
     }
 
     @Override
-    public void onRemoved(LivingEntity entity, AttributeContainer attributes, int amplifier) {
-        if(entity instanceof BeeEntity)
-            entity.kill();
-    }
-
-    @Override
     public boolean canApplyUpdateEffect(int duration, int amplifier) {
         return true;
     }

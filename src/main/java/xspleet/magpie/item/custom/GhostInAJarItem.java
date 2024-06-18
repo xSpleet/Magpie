@@ -3,10 +3,14 @@ package xspleet.magpie.item.custom;
 
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.damage.DamageSource;
+import net.minecraft.entity.damage.DamageTypes;
+import net.minecraft.registry.tag.DamageTypeTags;
+import xspleet.magpie.MagpieMod;
 import xspleet.magpie.util.ArtifactItem;
 import xspleet.magpie.util.CombatModifier;
 
 import static net.minecraft.entity.damage.DamageTypes.GENERIC;
+import static xspleet.magpie.MagpieMod.NO_DAMAGE;
 
 public class GhostInAJarItem extends ArtifactItem
                              implements CombatModifier
@@ -19,12 +23,14 @@ public class GhostInAJarItem extends ArtifactItem
 
     @Override
     public void onOutgoingDamage(LivingEntity entity, DamageSource damageSource, float damageAmount) {
-        entity.damage(entity.world.getDamageSources().create(GENERIC, damageSource.getSource(), damageSource.getAttacker()), damageAmount);
+        if(damageAmount != NO_DAMAGE && !damageSource.isIn(DamageTypeTags.BYPASSES_ARMOR))
+            entity.damage(entity.getWorld().getDamageSources().create(GENERIC, damageSource.getSource(), damageSource.getAttacker()), damageAmount);
     }
 
     @Override
     public void onIncomingDamage(LivingEntity entity, DamageSource damageSource, float damageAmount) {
-        entity.damage(entity.world.getDamageSources().create(GENERIC, damageSource.getSource(), damageSource.getAttacker()), damageAmount);
+        if(damageAmount != NO_DAMAGE && !damageSource.isIn(DamageTypeTags.BYPASSES_ARMOR))
+            entity.damage(entity.getWorld().getDamageSources().create(GENERIC, damageSource.getSource(), damageSource.getAttacker()), damageAmount);
     }
 
 }
