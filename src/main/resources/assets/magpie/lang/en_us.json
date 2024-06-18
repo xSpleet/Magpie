@@ -31,8 +31,7 @@
 
   "item.magpie.ghost_in_a_jar":"Ghost In A Jar",
   "item.magpie.description.ghost_in_a_jar": "<GRAY~ITALIC>You feel transparent",
-  "item.magpie.tooltip.ghost_in_a_jar": "<DARK_GREEN>All outgoing damage ignores armor&nwln;<RED>All incoming damage ignores armor",
-
+  "item.magpie.tooltip.ghost_in_a_jar": "<DARK_GREEN>All outgoing damage ignores armor&nwln;<RED>All incoming damage ignores armor&nwln;<>Ignores enchantments",
   "item.magpie.holy_grail":"The Holy Grail",
   "item.magpie.description.holy_grail": "<GRAY~ITALIC>The blood of the martyr",
   "item.magpie.tooltip.holy_grail": "<DARK_GREEN>You can walk on water&nwln;<DARK_GREEN>Hold shift to sink",
