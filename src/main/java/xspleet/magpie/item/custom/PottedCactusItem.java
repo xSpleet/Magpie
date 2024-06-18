@@ -20,7 +20,7 @@ public class PottedCactusItem extends ArtifactItem implements CombatModifier
 	@Override
 	public boolean dealIncomingDamage(LivingEntity entity, DamageSource damageSource, float damageAmount) {
 		return !(Objects.equals(damageSource.getName(), "cactus") || Objects.equals(damageSource.getName(), "thorns") || Objects.equals(damageSource.getName(), "sting"));
-	}
+    }
 
 	@Override
 	public void onIncomingDamage(LivingEntity entity, DamageSource damageSource, float damageAmount) {
