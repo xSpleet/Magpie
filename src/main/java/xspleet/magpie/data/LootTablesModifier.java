@@ -59,7 +59,7 @@ public class LootTablesModifier
 
             if(id.equals(PILLAGER_OUTPOST_CHEST_ID)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
-                        .conditionally(RandomChanceLootCondition.builder(0.15f))
+                        .conditionally(RandomChanceLootCondition.builder(0.12f))
                         .rolls(ConstantLootNumberProvider.create(1))
                         .with(ItemEntry.builder(ModItems.MARS_SPEAR)
                                 .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1))));
@@ -108,14 +108,14 @@ public class LootTablesModifier
 
             if(id.equals(VILLAGE_PLAINS_HOUSE_CHEST_ID)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
-                        .conditionally(RandomChanceLootCondition.builder(0.12f))
+                        .conditionally(RandomChanceLootCondition.builder(0.15f))
                         .rolls(ConstantLootNumberProvider.create(1))
                         .with(ItemEntry.builder(ModItems.WASP_NEST)
                                 .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)))
                                 .weight(1))
                         .with(ItemEntry.builder(ModItems.SALE_TAG)
                                 .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)))
-                                .weight(1));
+                                .weight(2));
                 tableBuilder.pool(poolBuilder.build());
             }
 
@@ -134,7 +134,7 @@ public class LootTablesModifier
 
             if(id.equals(ABANDONED_MINESHAFT_CHEST_ID)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
-                        .conditionally(RandomChanceLootCondition.builder(0.16f))
+                        .conditionally(RandomChanceLootCondition.builder(0.12f))
                         .rolls(ConstantLootNumberProvider.create(1))
                         .with(ItemEntry.builder(ModItems.YIN)
                                 .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)))
@@ -147,7 +147,7 @@ public class LootTablesModifier
 
             if(id.equals(END_CITY_TREASURE_CHEST_ID)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
-                        .conditionally(RandomChanceLootCondition.builder(0.08f))
+                        .conditionally(RandomChanceLootCondition.builder(0.1f))
                         .rolls(ConstantLootNumberProvider.create(1))
                         .with(ItemEntry.builder(ModItems.WAX_WING)
                                 .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)))
@@ -178,7 +178,7 @@ public class LootTablesModifier
 
             if(id.equals(WOODLAND_MANSION_CHEST_ID)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
-                        .conditionally(RandomChanceLootCondition.builder(0.12f))
+                        .conditionally(RandomChanceLootCondition.builder(0.08f))
                         .rolls(ConstantLootNumberProvider.create(1))
                         .with(ItemEntry.builder(ModItems.GHOST_IN_A_JAR)
                                 .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1))));
@@ -205,7 +205,7 @@ public class LootTablesModifier
 
             if(id.equals(DESERT_PYRAMID_CHEST_ID)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
-                        .conditionally(RandomChanceLootCondition.builder(0.1f))
+                        .conditionally(RandomChanceLootCondition.builder(0.08f))
                         .rolls(ConstantLootNumberProvider.create(1))
                         .with(ItemEntry.builder(ModItems.JUPITERS_THUNDERBOLT)
                                 .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)))
@@ -218,7 +218,7 @@ public class LootTablesModifier
 
             if(id.equals(SHIPWRECK_TREASURE_CHEST_ID)) {
                 LootPool.Builder poolBuilder = LootPool.builder()
-                        .conditionally(RandomChanceLootCondition.builder(0.05f))
+                        .conditionally(RandomChanceLootCondition.builder(0.20f))
                         .rolls(ConstantLootNumberProvider.create(1))
                         .with(ItemEntry.builder(ModItems.LIGHT_BULB)
                                 .apply(SetCountLootFunction.builder(ConstantLootNumberProvider.create(1)))
