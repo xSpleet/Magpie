@@ -128,20 +128,23 @@ public class ArtifactItem extends TrinketItem
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
         addArtifactRarity(tooltip);
-        if(world.isClient && Screen.hasShiftDown())
+        if(world != null && world.isClient())
         {
-            if(stack.getItem() instanceof ActiveArtifactItem activeArtifact)
+            if(Screen.hasShiftDown())
             {
-                tooltip.add(Text.translatable("item.magpie.tooltip.recharge", activeArtifact.getCooldown()/20 + " "));
+                if(stack.getItem() instanceof ActiveArtifactItem activeArtifact)
+                {
+                    tooltip.add(Text.translatable("item.magpie.tooltip.recharge", activeArtifact.getCooldown()/20 + " "));
+                }
+                TextFormatter.addTooltips(Text.translatable("item.magpie.tooltip." + stack.getItem()),tooltip);
             }
-            TextFormatter.addTooltips(Text.translatable("item.magpie.tooltip." + stack.getItem()),tooltip);
-        }
-        else
-        {
-            if(stack.getItem() instanceof ActiveArtifactItem)
-                TextFormatter.addTooltips(Text.translatable("item.magpie.tooltip.active"), tooltip);
-            TextFormatter.addTooltips(Text.translatable("item.magpie.description." + stack.getItem()), tooltip);
-            tooltip.add(Text.translatable("item.magpie.tooltip.shiftmoreinfo"));
+            else
+            {
+                if(stack.getItem() instanceof ActiveArtifactItem)
+                    TextFormatter.addTooltips(Text.translatable("item.magpie.tooltip.active"), tooltip);
+                TextFormatter.addTooltips(Text.translatable("item.magpie.description." + stack.getItem()), tooltip);
+                tooltip.add(Text.translatable("item.magpie.tooltip.shiftmoreinfo"));
+            }
         }
     }
 
