@@ -128,7 +128,7 @@ public class ArtifactItem extends TrinketItem
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
         addArtifactRarity(tooltip);
-        if(Screen.hasShiftDown())
+        if(world.isClient && Screen.hasShiftDown())
         {
             if(stack.getItem() instanceof ActiveArtifactItem activeArtifact)
             {
