@@ -29,16 +29,6 @@ public class MagpieMod implements ModInitializer {
 	@Override
 	public void onInitialize()
 	{
-		ModelPredicateProviderRegistry.register(ModItems.LIGHT_BULB, new Identifier("on"), (itemStack, clientWorld, livingEntity, id) -> {
-            if (livingEntity == null || !TrinketsUtil.hasArtifact(livingEntity, ModItems.LIGHT_BULB)) {
-                return 0.0F;
-            }
-
-            if (livingEntity.getMaxHealth() <= livingEntity.getHealth())
-                return 1.0F;
-            else
-                return 0.0F;
-        });
 		ModItems.registerModItems();
 		ModItemGroup.registerItemGroup();
 		ModStatusEffects.registerStatusEffects();
