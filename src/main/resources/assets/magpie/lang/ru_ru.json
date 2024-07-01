@@ -35,7 +35,7 @@
 
   "item.magpie.holy_grail":"Святой Грааль",
   "item.magpie.description.holy_grail": "<GRAY~ITALIC>Кровь мученика",
-  "item.magpie.tooltip.holy_grail": "<DARK_GREEN>Ты можешь ходить по воде&nwln;<DARK_GREEN>Держи Shift чтобы тонуть",
+  "item.magpie.tooltip.holy_grail": "<DARK_GREEN>Ты можешь ходить по воде&nwln;<DARK_GREEN>Присядь чтобы тонуть",
 
   "item.magpie.ignis": "Игнис",
   "item.magpie.description.ignis": "<GRAY~ITALIC>Интенсивность пламени наполняет твоё тело",
