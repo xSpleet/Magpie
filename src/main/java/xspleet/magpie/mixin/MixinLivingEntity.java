@@ -46,7 +46,7 @@ public abstract class MixinLivingEntity
     private void inject(FluidState state, CallbackInfoReturnable<Boolean> cir)
     {
         LivingEntity livingEntity = (LivingEntity)(Object)this;
-        if (TrinketsUtil.hasArtifact(livingEntity, ModItems.HOLY_GRAIL) && livingEntity.getFluidHeight(FluidTags.WATER) < 0.39 && !Screen.hasShiftDown())
+        if (TrinketsUtil.hasArtifact(livingEntity, ModItems.HOLY_GRAIL) && livingEntity.getFluidHeight(FluidTags.WATER) < 0.39 && !livingEntity.isSneaking())
             cir.setReturnValue(true);
         cir.setReturnValue(cir.getReturnValue());
     }
