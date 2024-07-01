@@ -35,7 +35,7 @@
 
   "item.magpie.holy_grail":"The Holy Grail",
   "item.magpie.description.holy_grail": "<GRAY~ITALIC>The blood of the martyr",
-  "item.magpie.tooltip.holy_grail": "<DARK_GREEN>You can walk on water&nwln;<DARK_GREEN>Hold shift to sink",
+  "item.magpie.tooltip.holy_grail": "<DARK_GREEN>You can walk on water&nwln;<DARK_GREEN>Sneak to sink",
 
   "item.magpie.ignis": "Ignis",
   "item.magpie.description.ignis": "<GRAY~ITALIC>The intensity of the flame fills your body",
